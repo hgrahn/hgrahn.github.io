@@ -9,4 +9,4 @@ You can click the Preview link to take a look at your changes.
 
 When **updating** the home page, edit [index.html](index.html)!
 
-<img src="/images/bthlogo_svart_2024.png" alt="BTH Logo" width="200"/>
+<img src="bthlogo_svart_2024.png" alt="BTH Logo" width="200"/>
