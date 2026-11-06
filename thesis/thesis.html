@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>H&aring;kan Grahn's Ph.D. Thesis</title>
+</head>
+
+<body>
+
+<h2><CENTER>Evaluation of Design Alternatives for a<br>
+Directory-Based Cache Coherence Protocol<br>
+in Shared-Memory Multiprocessors</CENTER></h2>
+<hr>
+
+<h4><CENTER>H&aring;kan Grahn</CENTER></h4><br><p>
+
+<CENTER>Doctoral thesis submitted for partial fulfilment of the
+requirements for the degree of <br>
+Doctor of Philosophy in Computer Engineering.</CENTER><br><p>
+
+<CENTER>Lund October, 1995</CENTER>
+<br>
+<CENTER>CODEN: SE-LUTEDX/TEDT-95/1007+18p</CENTER><p>
+<hr>
+
+<br>My thesis is a summary of papers, and all parts of the thesis
+are available as postscript files. If you would like a hard-copy
+instead, please send me a <A HREF="mailto:hakan.grahn@bth.se">mail</A>. <p>
+
+<UL>
+<LI>	<A HREF="#abstract">Abstract</A>
+<LI>	Summary (<a href="thesis_summary.pdf">pdf</a>)
+	<!--(paper size: <A HREF="summary.A4.ps.Z">A4</A>,
+	<A HREF="summary.USletter.ps.Z">USletter</A>)-->
+</UL>
+
+The following seven papers are summarized in the thesis.
+(In 1994, I changed my last name from Nilsson to Grahn,
+which is why some of the papers are published under my old name.) <p>
+
+<OL>
+<LI> H. Grahn, P. Stenstr&ouml;m, and M. Dubois: ``Implementation and Evaluation of Update-Based Cache Protocols Under Relaxed Memory Consistency Models,'' <I>Future Generation Computer Systems</I>, Vol. 11, No. 3, pages 247-271, June 1995. (<a href="paper-I.pdf">pdf</a> Note that this pdf file does not have the same layout as the journal paper.)<p>
+	<!--Paper size: <A HREF="paper-I.A4.ps.Z">A4</A>, <A HREF="paper-I.USletter.ps.Z">USletter</A>)<p>-->
+
+<LI> H. Nilsson and P. Stenstr&ouml;m: ``An Adaptive Update-Based Cache Coherence Protocol for Reduction of Miss Rate and Traffic,'' In <I>Proceedings of Parallel Architectures and Languages Europe (PARLE)</I>, Lecture Notes in Computer Science 817, Springer-Verlag, pages 363-374, July 1994. The paper received Best Paper Award at the conference. (<a href="paper-II.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-II.A4.ps.Z">A4</A>, <A HREF="paper-II.USletter.ps.Z">USletter</A>)<p>-->
+
+<LI> H. Nilsson and P. Stenstr&ouml;m: ``The Scalable Tree Protocol -- A Cache Coherence Approach for Large-Scale Multiprocessors,'' In <I>Proceedings of Fourth IEEE Symposium on Parallel and Distributed Processing</I>, pages 498-506, December 1992. (<a href="paper-III.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-III.ps.Z">A4</A>, <A HREF="paper-III.ps.Z">USletter</A>)<p>-->
+
+<LI> H. Nilsson and P. Stenstr&ouml;m: ``Performance Evaluation of Link-Based Cache Coherence Schemes,'' In <I>Proceedings of the 26th Annual Hawaii International Conference on System Sciences</I>, pages 486-495, January 1993. (<a href="paper-IV.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-IV.ps.Z">A4</A>, <A HREF="paper-IV.ps.Z">USletter</A>)<p>-->
+
+<LI> H. Grahn and P. Stenstr&ouml;m: ``Efficient Strategies for Software-Only Directory Protocols in Shared-Memory Multiprocessors,'' In <I>Proceedings of the 22nd International Symposium on Computer Architecture</I>, pages 38-47, June 1995. (<a href="paper-V.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-V.A4.ps.Z">A4</A>, <A HREF="paper-V.USletter.ps.Z">USletter</A>) <p>-->
+
+<LI> H. Grahn and P. Stenstr&ouml;m: ``<I>Architectural Support for an Efficient Implementation of a Software-Only Directory Cache Coherence Protocol</I>,'' Technical Report, Dept. of Computer Engineering, Lund University, June 1995. Presented at the Fifth Workshop on Scalable Shared-Memory Multiprocessors, June 1995. (<a href="paper-VI.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-VI.A4.ps.Z">A4</A>, <A HREF="paper-VI.USletter.ps.Z">USletter</A>) <p>-->
+
+<LI> H. Grahn and P. Stenstr&ouml;m: ``<I>Relative Performance of Hardware and Software-Only Directory Protocols Under Latency Tolerating and Reducing Techniques</I>,'' Technical Report, Dept. of Computer Engineering, Lund University, August 1995. (<a href="paper-VII.pdf">pdf</a>)<p>
+	<!--(paper size: <A HREF="paper-VII.A4.ps.Z">A4</A>, <A HREF="paper-VII.USletter.ps.Z">USletter</A>) <p>-->
+</OL>
+
+<hr>
+
+<a name="abstract">
+<h3>Abstract</h3>
+</a>
+
+In shared-memory multiprocessors, caches are attached to the processors in order to reduce the memory access latency. To keep the memory consistent, a cache coherence protocol is needed. A well known approach is to record which caches have copies of a memory block in a directory and only notify the caches having a copy when a processor modifies the block. Such a protocol is called a directory-based cache coherence protocol. This thesis, which is a summary of seven papers, identifies three problems in a directory-based protocol, and evaluates implementation and performance aspects of some design alternatives. The evaluation methodology is based on program-driven simulation. <p>
+
+The write-invalidate policy, which is used in the baseline protocol, forces all other copies of a block to be invalidated when a processor modifies the block. This leads to a cache miss each time a processor accesses an invalidated block. To reduce the number of cache misses, a competitive-update policy is proposed in this thesis. The competitive-update policy is shown to reduce both the read stall and execution times as compared to write-invalidate under a relaxed memory consistency model. However, update-based policies need more buffering and hardware support in the caches. <p>
+
+In the baseline protocol, the implementation cost of the directory is proportional to the number of caches. To reduce this cost, an alternative directory organization is proposed which distributes the directory information among the caches sharing the same memory block. To achieve a low write latency, the caches sharing a block are organized in a tree. The caches are linked into the tree in parallel with application execution to achieve a low read latency. <p>
+
+The hardware-implemented directory controller in the baseline protocol may lead to high design complexity and implementation cost. This thesis evaluates a design alternative where the controller is implemented using software handlers executed on the compute processor. By using efficient strategies and proper architectural support, this design alternative is shown to be competitive with the baseline protocol. However, the performance of this alternative is more sensitive to other design choices, e.g., block size and latency tolerating techniques, than the baseline protocol. <p>
+
+
+<hr>
+
+<h5>Last Modified: October 10, 1995</h5>
+</body>
+</html>
