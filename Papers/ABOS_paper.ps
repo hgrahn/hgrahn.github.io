@@ -1,0 +1,3674 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 10 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Courier FMFONTDEFINE
+3 0 /Times-Italic FMFONTDEFINE
+4 0 /Helvetica-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(1) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 16 Q
+(ABOS - an Agent-Based Operating System) 151.64 689.49 T
+0 0 0 1 0 0 0 K
+0 12 Q
+(Mikael Svahnberg, Paul Davidsson, H\214kan Grahn) 177.82 646.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Department of Computer Science and Business Administration) 146.32 625.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(University of Karlskrona/Ronneby) 214.32 607.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Soft Center, S-372 25 Ronneby, Sweden) 200.14 589.16 T
+0 0 0 1 0 0 0 K
+2 10 Q
+({msv,pdv,hgr}@ide.hk-r.se) 222.64 572.49 T
+0 0 0 1 0 0 0 K
+0 12 Q
+(Telephone: +46 457 787 {93,84,62}) 210.5 556.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Fax: +46 457 161 03) 247.59 538.16 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+1.06 (Modern operating systems should be) 138.9 483.49 P
+3 F
+1.06 (extensible) 293.89 483.49 P
+0 F
+1.06 ( and) 333.88 483.49 P
+3 F
+1.06 (flexible) 355.44 483.49 P
+0 F
+1.06 (. This means that) 384.88 483.49 P
+0.22 (the operating system should be able to accept ne) 138.9 471.49 P
+0.22 (w beha) 333.67 471.49 P
+0.22 (viour and change e) 362.29 471.49 P
+0.22 (xist-) 438.6 471.49 P
+-0.2 (ing beha) 138.9 459.49 P
+-0.2 (viour without too much trouble and that it should ideally also be able to) 172.65 459.49 P
+-0.06 (do this without an) 138.9 447.49 P
+-0.06 (y) 210.51 447.49 P
+-0.06 (, or v) 214.86 447.49 P
+-0.06 (ery little, do) 235.42 447.49 P
+-0.06 (wntime. Furthermore, during the past years) 283.66 447.49 P
+0.45 (the importance of the netw) 138.9 435.49 P
+0.45 (ork has increased drastically) 247.81 435.49 P
+0.45 (, creating a demand for) 362.1 435.49 P
+-0.1 (operating systems to function in a distrib) 138.9 423.49 P
+-0.1 (uted en) 301.43 423.49 P
+-0.1 (vironment. T) 330.09 423.49 P
+-0.1 (o achie) 381.41 423.49 P
+-0.1 (v) 409.66 423.49 P
+-0.1 (e this \337e) 414.51 423.49 P
+-0.1 (x-) 448.05 423.49 P
+0.75 (ibility and distrib) 138.9 411.49 P
+0.75 (utedness, we ha) 209.09 411.49 P
+0.75 (v) 273.42 411.49 P
+0.75 (e designed and e) 278.27 411.49 P
+0.75 (v) 346.63 411.49 P
+0.75 (aluated ABOS, an Agent-) 351.38 411.49 P
+-0.05 (Based Operating System. ABOS uses agents to solv) 138.9 399.49 P
+-0.05 (e all the tasks of the operat-) 346.16 399.49 P
+0.5 (ing system k) 138.9 387.49 P
+0.5 (ernel, thus mo) 190.37 387.49 P
+0.5 (ving a) 248.17 387.49 P
+0.5 (w) 273.24 387.49 P
+0.5 (ay from traditional monolithic k) 280.36 387.49 P
+0.5 (ernel struc-) 410.61 387.49 P
+1.9 (tures. Early results sho) 138.9 375.49 P
+1.9 (w that we ha) 235.45 375.49 P
+1.9 (v) 291.77 375.49 P
+1.9 (e g) 296.62 375.49 P
+1.9 (ained in \337e) 310.41 375.49 P
+1.9 (xibility and modularity) 358.5 375.49 P
+1.9 (,) 453.88 375.49 P
+2.12 (creating a f) 138.9 363.49 P
+2.12 (ault-tolerant distrib) 188.01 363.49 P
+2.12 (uted operating system that can adapt and be) 266.87 363.49 P
+(adapted to almost an) 138.9 351.49 T
+(y situation with ne) 221.24 351.49 T
+(gligible decrease in performance.) 295.26 351.49 T
+(K) 138.9 315.49 T
+(e) 145.87 315.49 T
+(yw) 150.16 315.49 T
+(ords: Operating systems, Practical application of multi-agent systems) 162.28 315.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(2) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 14 Q
+(1  Intr) 124.72 690.82 T
+(oduction) 162.57 690.82 T
+0 10 Q
+0.25 0.08 (Modern operating systems should be) 124.72 675.49 B
+3 F
+0.25 0.08 (extensible) 278.62 675.49 B
+0 F
+0.25 0.08 ( and) 319.44 675.49 B
+3 F
+0.25 0.08 (flexible) 339.8 675.49 B
+0 F
+0.25 0.08 ( [7]. This means that the) 369.91 675.49 B
+0.25 0.04 (operating system should be able to accept new behaviour and change existing behav-) 124.72 663.49 B
+0.12 (iour without too much trouble and that it should ideally also be able to do this without) 124.72 651.49 P
+0.09 (any, or very little, downtime. Furthermore, during the past years the importance of the) 124.72 639.49 P
+-0.02 (network has increased drastically, creating a demand for operating systems to function) 124.72 627.49 P
+(in a distributed environment.) 124.72 615.49 T
+0.1 (The main focus when designing operating systems has been on performance. With the) 124.72 597.49 P
+0.25 0.05 (assumption that a procedure call is magnitudes faster than an interprocess call \050IPC\051,) 124.72 585.49 B
+0.25 0.18 (kernels are traditionally implemented as large monolithic binaries. Obviously, this) 124.72 573.49 B
+0.25 0.17 (embedding of functionality is in conflict with the requirement of flexibility. When) 124.72 561.49 B
+0.04 (every new function has to be imported or implemented in the kernel space, one cannot) 124.72 549.49 P
+-0.2 (easily add new services on-the-fly. However, Bershad argues that the overhead for IPC) 124.72 537.49 P
+0.25 0.2 (calls has decreased enough to make this a practical approach also for time-critical) 124.72 525.49 B
+-0.16 (tasks [1]. The benefits one can gain by using IPC to communicate within the kernel are) 124.72 513.49 P
+0.25 0.16 (substantial. Modules can be exchanged during runtime and new ones can be added) 124.72 501.49 B
+0.25 0.07 (without having to reboot or recompile. New strategies and resources can be changed) 124.72 489.49 B
+0.25 0.05 (and added as easy as they should be. By using IPC, one can also easily and transpar-) 124.72 477.49 B
+0.25 0.14 (ently run some of the services on another machine, thus creating a truly distributed) 124.72 465.49 B
+(system.) 124.72 453.49 T
+0.25 0.01 (Since agents are autonomous, uses IPC, and can potentially adapt over time we argue) 124.72 435.49 B
+0.04 (that flexible operating systems can be realised by applying agents in the kernel. In this) 124.72 423.49 P
+0.25 0.15 (paper we present the architecture of ABOS, an Agent-Based Operating System. To) 124.72 411.49 B
+-0.08 (further prove the point, a design solution for a particular task of a distributed operating) 124.72 399.49 P
+0.25 0.01 (system, managing a file system, will be presented. However, we will start by present-) 124.72 387.49 B
+(ing a short overview of what trends are visible in the operating system community.) 124.72 375.49 T
+4 12 Q
+(Related W) 124.72 348.16 T
+(ork) 182.01 348.16 T
+0 10 Q
+0.25 0.2 (The research in operating systems tends to be much aimed at object-orientation to) 124.72 335.49 B
+0.13 (achieve flexibility, maintainability and extensibility. There is much discussion regard-) 124.72 323.49 P
+0.25 0.24 (ing persistent objects, migrating objects and processes [2], and even omnipresent) 124.72 311.49 B
+0.25 0.1 (objects [3]. Persistent objects discussions seems to be aimed at how to store objects) 124.72 299.49 B
+0.25 0 (without losing too much in performance. All in all, there is much emphasis on) 124.72 287.49 B
+3 F
+0.25 0 (how) 443.34 287.49 B
+0 F
+0.25 0 (to) 462.77 287.49 B
+-0.14 (do things and not so much on) 124.72 275.49 P
+3 F
+-0.14 (what) 243.99 275.49 P
+0 F
+-0.14 ( to do. The research on objects are on varying levels) 263.44 275.49 P
+0.11 (of detail. Some suggest kernel support for persistent objects [4] while others deal with) 124.72 263.49 P
+0.17 (more abstract reasoning on how to name objects in a global network [5]. There is also) 124.72 251.49 P
+0.25 0.06 (a major trend to make the actual kernel smaller, letting applications manage more of) 124.72 239.49 B
+0.25 0.02 (the traditional kernel tasks. Spring [6] and Aegis [7] are typical representatives of the) 124.72 227.49 B
+-0.15 (current trends. Spring because it is an effort to make a flexible and object-oriented sys-) 124.72 215.49 P
+0.25 0.17 (tem where the objects can easily communicate in a distributed environment. Aegis) 124.72 203.49 B
+-0.16 (because it illustrates that user-mode software can equally well manage resources as the) 124.72 191.49 P
+0.07 (kernel, and that the purpose of the kernel is to safely export control of the resources to) 124.72 179.49 P
+(the applications.) 124.72 167.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(3) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.15 (Moreover, distribution is in the most cases \050except Amoeba [15]\051 reduced to show the) 124.72 693.49 P
+0.25 0.12 (user that there exists more than one computer in the network, sometimes giving the) 124.72 681.49 B
+0.25 0.04 (user a possibility to execute software remotely. File systems are typically centralized) 124.72 669.49 B
+0.25 0.13 (and shared across the network. IPC is many times cumbersome for the applications) 124.72 657.49 B
+(and the possibility for it is often added to the system almost as an afterthought.) 124.72 645.49 T
+0.25 0.17 (As mentioned earlier, many attempts has been made to define naming schemes for) 124.72 627.49 B
+0.17 (objects, defining how to make objects persistent and so on. These objects usually lack) 124.72 615.49 P
+0.25 0.13 (the autonomous quality or some of the other qualities needed to be called an agent.) 124.72 603.49 B
+-0.18 (Also, as said before, there is more emphasis on) 124.72 591.49 P
+3 F
+-0.18 (how) 313.88 591.49 P
+0 F
+-0.18 ( to support objects rather than) 330.55 591.49 P
+3 F
+-0.18 (what) 451.1 591.49 P
+0 F
+-0.04 (the objects should do. In the agent community, the situation is quite the opposite. Here) 124.72 579.49 P
+0.25 0.06 (one assumes that underlying communication primitives and support for agents exists) 124.72 567.49 B
+-0.16 (and instead defines the behaviours of the agents. Nevertheless, the discussions are usu-) 124.72 555.49 P
+0.25 0.05 (ally held on a high level, not giving any concrete examples of what needs to be done) 124.72 543.49 B
+0.25 0.02 (and not one even hints at using agents to perform operating system tasks. Few papers) 124.72 531.49 B
+0.25 0.05 (involves both agents and operating systems, but some examples exist. TACOMA [8]) 124.72 519.49 B
+0.25 0.24 (provides support for mobile agents, but its main focus is on electronic commerce) 124.72 507.49 B
+-0.02 (rather than operating system tasks. The mail transfer system MOTIS [9] uses agents to) 124.72 495.49 P
+-0.08 (relay the e-mails to and from the user via one or a set of servers. The most well-known) 124.72 483.49 P
+0 (example of agents in operating systems is probably the various daemons in UNIX sys-) 124.72 471.49 P
+0.18 (tems. These daemons can be considered reactive and to some extent social agents, but) 124.72 459.49 P
+0.25 0.07 (we believe that they belong more to the client-server paradigm. Nevertheless, UNIX) 124.72 447.49 B
+(daemons are the most agent-like entities to be found in current operating systems.) 124.72 435.49 T
+4 12 Q
+(Wh) 124.72 408.16 T
+(y use a) 143.14 408.16 T
+(g) 183.72 408.16 T
+(ents?) 191.17 408.16 T
+0 10 Q
+-0.11 (As UNIX-daemons shows, agents are suitable for many of the service tasks in an oper-) 124.72 395.49 P
+0.25 0.19 (ating system. Any task that requires monitoring of some device or network socket) 124.72 383.49 B
+0.08 (should manage without interference from the user. Within the operating system kernel) 124.72 371.49 P
+0.12 (there are other tasks where the subsystems work more like peers. So does for example) 124.72 359.49 P
+0.25 0.19 (memory and process managers need to coordinate their work to suspend a process) 124.72 347.49 B
+-0.03 (waiting for a memory page to be read from disk. We believe that by viewing the entire) 124.72 335.49 P
+0.25 0.31 (kernel of an operating system as a multi-agent system, you can benefit from the) 124.72 323.49 B
+0.25 0.11 (increased support for communication and the possibilities to implement parts of the) 124.72 311.49 B
+0.23 (kernel with arbitrary levels of intelligence. A multi-agent system enables the different) 124.72 299.49 P
+-0.04 (subsystems of the kernel to maintain dialogues instead of the traditional function calls.) 124.72 287.49 P
+0.09 (New modules can be added at runtime, extending the total functionality of the system,) 124.72 275.49 P
+0.25 0.1 (and because all communication is message based there is no distinction whether the) 124.72 263.49 B
+0 (receiving agent resides on the local host or on another machine in the network. Agents) 124.72 251.49 P
+(can thus cooperate over the network to form a truly distributed operating system.) 124.72 239.49 T
+0.21 (GLOBE [11] and Paramecium [10] are examples of systems that implements a modu-) 124.72 221.49 P
+0.25 0.06 (lar system much like the multi-agent system described above by supporting dynamic) 124.72 209.49 B
+0.25 0 (objects and components. We claim that the step from dynamic or persistent objects to) 124.72 197.49 B
+0.25 0.1 (agents is not that far, so our work will rely much on the theories and conclusions of) 124.72 185.49 B
+(these and similar projects.) 124.72 173.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(4) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 14 Q
+(2  General la) 124.72 690.82 T
+(y) 207.72 690.82 T
+(out of ABOS) 215.15 690.82 T
+0 10 Q
+0.25 0.17 (ABOS consists of a set of small and autonomous modules, or agents. Unlike tradi-) 124.72 675.49 B
+0.25 0.08 (tional kernels where all modules share the same memory space, the agents in ABOS) 124.72 663.49 B
+0.25 0.22 (are run as separate processes. In this sense the system will host fully autonomous) 124.72 651.49 B
+0.25 0.12 (agents but still be a federated agent system, as opposed to common agent platforms) 124.72 639.49 B
+0.25 0 (which are built on top of an existing operating system. This yields great opportunities) 124.72 627.49 B
+-0.02 (to modify and extend the behaviour of the system without having to recompile or even) 124.72 615.49 P
+0.25 0.13 (restart the operating system. The system is furthermore structured as a set of layers) 124.72 603.49 B
+0.25 0.32 (around the core in the middle \050see Figure 1\051. The level of the services provided) 124.72 591.49 B
+0.25 0.07 (increase for each layer. The hardware is accessed wherever it is feasible, not forcing) 124.72 579.49 B
+(calls to propagate through more layers than is necessary.) 124.72 567.49 T
+4 8 Q
+(Figure 1. ABOS, g) 124.72 387.68 T
+(eneral la) 192.82 387.68 T
+(y) 225.12 387.68 T
+(out) 229.37 387.68 T
+0 10 Q
+0.25 0.09 (The innermost layer is the) 124.72 365.34 B
+3 F
+0.25 0.09 (core) 235.41 365.34 B
+0 F
+0.25 0.09 ( system. This system provides very basic support for) 253.55 365.34 B
+0.25 0.08 (processes and memory management. Around this layer is the actual) 124.72 353.34 B
+3 F
+0.25 0.08 (kernel) 404.78 353.34 B
+0 F
+0.25 0.08 ( wrapped,) 430.24 353.34 B
+0.25 0.19 (providing more advanced process and memory management. File systems are also) 124.72 341.34 B
+0.25 0.07 (defined in the kernel, as are more advanced communication primitives and I/O man-) 124.72 329.34 B
+0.25 0.01 (agement. Outside of the kernel layer is a) 124.72 317.34 B
+3 F
+0.25 0.01 (service) 291.48 317.34 B
+0 F
+0.25 0.01 ( layer, providing services that are not) 319.9 317.34 B
+0.25 0.06 (part of an operating system kernel, but are still part of the operating system like user) 124.72 305.34 B
+0.25 0.03 (management and resource allocation.) 124.72 293.34 B
+3 F
+0.25 0.03 (User applications) 278.19 293.34 B
+0 F
+0.25 0.03 (, finally, are run on top of the) 350.36 293.34 B
+(service layer.) 124.72 281.34 T
+0.25 0.08 (We will now describe the different layers in further detail. Starting with the core we) 124.72 263.34 B
+-0.08 (will work our way outwards to the end-user applications. We will not describe these in) 124.72 251.34 P
+0.25 0 (detail, but rather stop at the service level where ordinary operating system boundaries) 124.72 239.34 B
+0.25 0.25 (go. Exactly how the tasks in the operating system are performed is not explained) 124.72 227.34 B
+(either, unless they are of particular interest for the agent aspects.) 124.72 215.34 T
+4 14 Q
+(3  The Core) 124.72 186.68 T
+0 10 Q
+0.09 (At the very core of the system is the boot loader that loads the core modules. The core) 124.72 171.34 P
+0.25 0.25 (modules manage process management, memory management and communication) 124.72 159.34 B
+0 0 0 1 0 0 0 K
+124.72 401.01 470.55 564.16 C
+0 0 0 1 0 0 0 K
+7 X
+0 0 0 1 0 0 0 K
+90 450 82.2 70.87 297.64 481.95 G
+0.5 H
+2 Z
+0 X
+90 450 82.2 70.87 297.64 481.95 A
+0 10 Q
+(user applications) 263.89 540.32 T
+7 X
+90 450 60.6 53.32 297.64 482.63 G
+0 X
+90 450 60.6 53.32 297.64 482.63 A
+(services) 281.53 524.06 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 40.24 34.66 297.64 482.63 G
+0 X
+90 450 40.24 34.66 297.64 482.63 A
+(kernel) 285.14 503.2 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 18.78 16 297.64 482.63 G
+0 X
+90 450 18.78 16 297.64 482.63 A
+(core) 289.03 479.28 T
+0 0 0 1 0 0 0 K
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(5) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.19 (primitives. The modules support very little intelligence, just a basic scheduler and) 124.72 693.49 B
+-0.07 (primitive memory management. In fact, they should only support the creation and run-) 124.72 681.49 P
+0.25 0.06 (ning of the advanced managers in the kernel \050see below\051. It is only the core modules) 124.72 669.49 B
+0.25 0.16 (that interface such platform-specific hardware as CPU and memory, whereas other) 124.72 657.49 B
+(hardware can be accessed by any device driver in the kernel layer.) 124.72 645.49 T
+0.18 (The reason for this division between core managers and advanced managers is to gain) 124.72 627.49 P
+0.25 0.08 (flexibility. By keeping the core functionality simple, more interesting behaviour can) 124.72 615.49 B
+-0.04 (replace the default without disturbing the low-level hardware interface. It would, how-) 124.72 603.49 P
+-0.1 (ever, not do to remove the core layer altogether since you need some support to get the) 124.72 591.49 P
+(rest of the system up and running.) 124.72 579.49 T
+0.25 0.01 (Process management is required at this level to be able to run the rest of the kernel as) 124.72 561.49 B
+0.25 0.3 (separate processes. You need to have at least support for creating and switching) 124.72 549.49 B
+0.15 (between processes at this level. More advanced process management can very well be) 124.72 537.49 P
+0.12 (handled at the kernel level. The same reasoning holds for memory management. Once) 124.72 525.49 P
+0.25 0.07 (a process is created, its code needs to be loaded into memory, which cannot be done) 124.72 513.49 B
+(outside of the core.) 124.72 501.49 T
+0.25 0.06 (A process is created by a request to the process manager. The process manager initi-) 124.72 483.49 B
+0.25 0.01 (ates a process control block and assigns priorities etc. to it. A unique id is also gener-) 124.72 471.49 B
+0.25 0.02 (ated and associated with the process. This id is used by all other processes to find the) 124.72 459.49 B
+-0.16 (newly created one. At this level, no automation is present, so you need an extra request) 124.72 447.49 P
+0.25 0.15 (to the memory manager requesting a page allocation and the binary code to fill the) 124.72 435.49 B
+-0.21 (pages with. With this allocation scheme it is easy to load the rest of the kernel since the) 124.72 423.49 P
+0.25 0.05 (binaries are specified on creation. The boot loader can load the core and then start to) 124.72 411.49 B
+-0.06 (load the rest of the kernel using the core. As soon as enough of the kernel is loaded the) 124.72 399.49 P
+(boot loader can terminate.) 124.72 387.49 T
+0.25 0.02 (The support for process communication is also placed at this low level, since the ker-) 124.72 369.49 B
+0.25 0.06 (nel uses the available IPC mechanisms to communicate with each other and with the) 124.72 357.49 B
+-0.04 (core system. At this level the communication is restricted to simple pipes, described in) 124.72 345.49 P
+0.25 0.15 (more detail below. Additional primitives is handled by library functions within the) 124.72 333.49 B
+0.11 (other processes. The core modules can of course also communicate with each other so) 124.72 321.49 P
+-0.18 (that incoming messages for a process results in a wakeup of the process and memory is) 124.72 309.49 P
+(freed upon process termination.) 124.72 297.49 T
+4 14 Q
+(4  The K) 124.72 268.83 T
+(ernel) 178.97 268.83 T
+0 10 Q
+0.04 (At the kernel layer we find the functionality that is more commonly part of the operat-) 124.72 253.49 P
+(ing system. The following tasks are handled in the kernel layer:) 124.72 241.49 T
+4 F
+(\245) 124.72 223.49 T
+0 F
+(Final process management) 138.9 223.49 T
+4 F
+(\245) 124.72 210.99 T
+0 F
+(Additional memory management) 138.9 210.99 T
+4 F
+(\245) 124.72 198.49 T
+0 F
+(File systems management) 138.9 198.49 T
+4 F
+(\245) 124.72 185.99 T
+0 F
+(Communication naming schemes) 138.9 185.99 T
+4 F
+(\245) 124.72 173.49 T
+0 F
+(I/O management) 138.9 173.49 T
+4 F
+(\245) 124.72 160.99 T
+0 F
+(Netw) 138.9 160.99 T
+(ork management) 160.46 160.99 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(6) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+4 8 Q
+(Figure 2. ABOS, kernel and core a) 124.72 435.71 T
+(g) 253.58 435.71 T
+(ents) 258.55 435.71 T
+0 10 Q
+0.1 (As seen in Figure 2, the core takes care of the basic memory management and process) 124.72 413.37 P
+0.25 0.11 (management, whereas more advanced services resides in the kernel layer outside of) 124.72 401.37 B
+0.25 0.05 (the core. All managers should be considered agents, even those in the core. The core) 124.72 389.37 B
+0.25 0.16 (agents have given up part of their independence, but they are still autonomous and) 124.72 377.37 B
+(social. They all communicate using a common predefined ACL such as KQML [14].) 124.72 365.37 T
+-0.21 (The final scheduling algorithms for processes etc. are handled at the kernel level, using) 124.72 347.37 P
+0.25 0.03 (the core process manager to do the actual switching of processes. Swapping and pag-) 124.72 335.37 B
+0.25 0.14 (ing algorithms are categorized as advanced services, using the core functions when) 124.72 323.37 B
+0.24 (needed to do the actual work. Listings of shared memory pools are also managed out-) 124.72 311.37 P
+0.25 0.27 (side of the core, together with access information and authentication. The kernel) 124.72 299.37 B
+0.25 0.05 (agents use the core communication management to access the advanced communica-) 124.72 287.37 B
+0.1 (tion services. The advanced communications manager provide intelligible naming and) 124.72 275.37 P
+(network-wide communication.) 124.72 263.37 T
+0.25 0.09 (Letting the core manage all processor and memory access means that only the func-) 124.72 245.37 B
+0.25 0.06 (tionality in the core and perhaps the device managers need to be run in kernel mode.) 124.72 233.37 B
+0.25 0.09 (The rest can very well be taken care of in user mode, even if it may be desirable for) 124.72 221.37 B
+0.25 0.15 (security reasons to also let other tasks run in kernel mode. Removing the needs for) 124.72 209.37 B
+0.25 0.11 (other agents to be aware of platform-specific details also means that there is a great) 124.72 197.37 B
+-0.02 (flexibility to exchange parts without affecting others and without needing to be rewrit-) 124.72 185.37 P
+(ten for every new platform.) 124.72 173.37 T
+124.72 153.07 470.55 700.16 C
+0 0 0 1 0 0 0 K
+124.72 445.04 470.55 700.16 C
+0 0 0 1 0 0 0 K
+7 X
+0 0 0 1 0 0 0 K
+90 450 158.74 124.43 297.04 573.75 G
+0.5 H
+2 Z
+0 X
+90 450 158.74 124.43 297.04 573.75 A
+6 X
+90 450 70.27 61.85 297.04 578.61 G
+1 H
+0 X
+90 450 70.27 61.85 297.04 578.61 A
+1 10 Q
+(Core) 286.49 622.11 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 31.94 27.83 265.1 594.07 G
+0 X
+90 450 31.94 27.83 265.1 594.07 A
+0 F
+(Memory) 247.88 597.2 T
+(Manage) 247.33 586.29 T
+(r) 279.54 586.29 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 31.94 27.83 328.98 594.07 G
+0 X
+90 450 31.94 27.83 328.98 594.07 A
+(Process) 313.7 597.2 T
+(Manage) 311.21 586.29 T
+(r) 343.42 586.29 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 41.26 27.83 299.22 544.59 G
+0 X
+90 450 41.26 27.83 299.22 544.59 A
+(Communication) 267 547.72 T
+(Manage) 281.45 536.81 T
+(r) 313.66 536.81 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 33.42 27.8 357.76 652.28 A
+(Process) 342.49 655.39 T
+(Manage) 339.99 644.5 T
+(r) 372.2 644.5 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 27.83 240.19 652.31 A
+(Memory) 222.97 651.77 T
+(Manage) 222.42 643.46 T
+(r) 254.63 643.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 27.83 381.92 511.61 A
+(File system) 359 514.73 T
+(Manage) 364.15 503.83 T
+(r) 396.36 503.83 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 37.85 27.83 296.64 488.93 A
+(Communication) 264.41 492.06 T
+(Manage) 278.86 481.15 T
+(r) 311.08 481.15 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Kernel) 282.32 677.55 T
+0 F
+(Advanced) 337.49 664.18 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Advanced) 220.65 659.7 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Advanced) 276.36 501.48 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 27.83 410.26 608.54 A
+(I/O) 403.6 611.66 T
+(Manage) 392.49 600.75 T
+(r) 424.7 600.75 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 27.83 207.69 510.58 A
+(Network) 190.19 513.7 T
+(Manage) 189.92 502.79 T
+(r) 222.13 502.79 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 15.46 415.54 560.02 A
+(Devices) 399.44 560.72 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 31.94 15.46 411.78 563.66 G
+0 X
+90 450 31.94 15.46 411.78 563.66 A
+(Device) 397.62 564.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Drivers) 396.79 553.46 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90 450 31.94 28.14 189.16 601.05 A
+(Devices) 173.06 604.23 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+7 X
+90 450 31.94 28.14 185.4 607.68 G
+0 X
+90 450 31.94 28.14 185.4 607.68 A
+(Other) 174.02 610.86 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Agents) 171.24 591.01 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Kernel) 173.68 600.86 T
+0 0 0 1 0 0 0 K
+124.72 153.07 470.55 700.16 C
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(7) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.12 (In the cases where you have a manager in the core and an advanced manager in the) 124.72 693.49 B
+-0.08 (kernel it is vital that there is a clear definition of what should be done in the kernel and) 124.72 681.49 P
+0.25 0.14 (what should be done in the core. In our view the core should only manage the very) 124.72 669.49 B
+0.25 0.39 (basic things, leaving all policy decisions and more complicated services to the) 124.72 657.49 B
+0.25 0.31 (advanced managers in the kernel layer. Consequently, the core process manager) 124.72 645.49 B
+0.06 (should only manage the creation of new process control blocks and run a process until) 124.72 633.49 P
+0.25 0.06 (it yields or falls asleep on some operation. When a process is removed from the run-) 124.72 621.49 B
+0.25 0.19 (queue, a new process will be selected to run. The most basic run-queues \050running,) 124.72 609.49 B
+0.25 0.04 (blocked, and ready\051 should be managed, but it should also be possible to create other) 124.72 597.49 B
+0.08 (queues and move processes between the queues on command from the advanced serv-) 124.72 585.49 P
+-0.12 (ices. The advanced process manager should maintain these extra queues and command) 124.72 573.49 P
+0.25 0.11 (movement of processes according to its algorithms. Creating a process at the kernel) 124.72 561.49 B
+0.25 0.02 (level can also include more than one operation in the core. Memory may be allocated) 124.72 549.49 B
+0.25 0.13 (and communications channels set up, according to the advanced process manager\325s) 124.72 537.49 B
+(strategies.) 124.72 525.49 T
+0.25 0.08 (The core memory manager should be able to allocate and deallocate virtual memory) 124.72 507.49 B
+0.25 0.13 (pages to physical memory. It should be possible to fill an allocated page or a set of) 124.72 495.49 B
+0.25 0.05 (pages with a binary string. The advanced memory management performs paging and) 124.72 483.49 B
+0.25 0.14 (swapping to and from disk. Lists of which memory pages that are shared are main-) 124.72 471.49 B
+0.03 (tained by the advanced memory manager. Page faults are handled by the core memory) 124.72 459.49 P
+0.25 0.12 (manager, but the advanced memory manager has to be asked for what to do when a) 124.72 447.49 B
+(page fault occur.) 124.72 435.49 T
+0.25 0.23 (Communication at the core layer is merely a matter of receiving an address and a) 124.72 417.49 B
+0.25 0.2 (string and deliver this to the right process, notifying the process manager that this) 124.72 405.49 B
+0.15 (process should be put in the ready queue if it is blocked. At this level, communication) 124.72 393.49 P
+0.25 0.21 (is done using pipes, similar to those used in UNIX. For larger messages a scheme) 124.72 381.49 B
+0.25 0.14 (using shared memory can be used, where the calling process uses standard pipes to) 124.72 369.49 B
+0.03 (request a shared memory buffer from the communications manager. The sender writes) 124.72 357.49 P
+0.25 0.1 (the message in this buffer and returns control to the manager that in turn shares this) 124.72 345.49 B
+0.25 0.07 (buffer with the recipient or recipients. At the kernel layer, a process can create more) 124.72 333.49 B
+0.25 0.04 (than one communication channel, or service, binding it to a certain name. The kernel) 124.72 321.49 B
+0.25 0.14 (communication manager also has the ability to make a name visible over the entire) 124.72 309.49 B
+(network, and forwards messages via the network manager to the right host.) 124.72 297.49 T
+0.25 0.1 (The division of work described above seemingly eliminates the need for the core as) 124.72 279.49 B
+-0.01 (soon as all kernel processes has been loaded. We argue that the core should remain for) 124.72 267.49 P
+0.25 0.05 (a number of reasons. The first and foremost reason is that you can embed everything) 124.72 255.49 B
+0.25 0.22 (that is platform dependent in the core, freeing the kernel agents from this burden.) 124.72 243.49 B
+0.25 0.05 (Another reason, equally valid, is that someone needs to handle the kernel agents that) 124.72 231.49 B
+(manages the advanced memory, process and communication tasks.) 124.72 219.49 T
+4 14 Q
+(5  The Ser) 124.72 190.83 T
+(vice La) 191.78 190.83 T
+(y) 238.98 190.83 T
+(er) 246.62 190.83 T
+0 10 Q
+0.25 0 (The service layer is wrapped around the kernel layer. In an ordinary operating system) 124.72 175.49 B
+0.02 (there are tasks that belong to the operating system, but not to the kernel. These are tra-) 124.72 163.49 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(8) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.2 (ditionally run in user-mode with the help of kernel-mode programs when needed. It is) 124.72 693.49 P
+0.25 0.06 (our opinion that by adding a specific layer in the operating system structure for such) 124.72 681.49 B
+0.25 0.24 (services, they get the acknowledgment they deserve without getting access to the) 124.72 669.49 B
+(intrinsics of the kernel.) 124.72 657.49 T
+0.25 0.33 (At the service layer functions like resource allocation and time synchronization) 124.72 639.49 B
+0.18 (resides. It is also here that the users are managed and mapped to IDs in the kernel and) 124.72 627.49 P
+0.22 (core. This user ID is in the user manager mapped against login names, authorities and) 124.72 615.49 P
+-0.22 (restrictions, home directory paths and environment variables, etc. Since process migra-) 124.72 603.49 P
+-0.02 (tion is not a part of the primary operating system functions it should not be included at) 124.72 591.49 P
+-0.23 (kernel level and is thus provided in the service layer instead. Agents for encryption and) 124.72 579.49 P
+0.25 0.07 (authentication is another thing that this layer provides. The reason is the same as for) 124.72 567.49 B
+0 (user management and process migration. The operating system can manage without it,) 124.72 555.49 P
+(but it is a convenience to provide support for it.) 124.72 543.49 T
+0.14 (Since network management and communication is provided at a lower layer, the serv-) 124.72 525.49 P
+0.25 0.08 (ice layer can be global for the entire network, creating a foundation for a distributed) 124.72 513.49 B
+0.25 0.02 (environment and hiding the peculiarities of the individual systems. Many of the serv-) 124.72 501.49 B
+0.25 0.02 (ices are global by nature, like user management, but it might be practical to duplicate) 124.72 489.49 B
+0.03 (the services to every machine for performance reasons. Since the services are agents it) 124.72 477.49 P
+0.25 0.08 (is no problem for them to cooperate and propagate changes to other machines in the) 124.72 465.49 B
+(network.) 124.72 453.49 T
+4 14 Q
+(6  The User Application La) 124.72 424.83 T
+(y) 300.27 424.83 T
+(er) 307.91 424.83 T
+0 10 Q
+0.16 (The final layer is the user applications. These typically involve user interfaces and are) 124.72 409.49 P
+0.24 (more interactive than the previous layers. A smart process manager could take advan-) 124.72 397.49 P
+-0.02 (tage of this information and manage processes\325 time quanta and priorities accordingly,) 124.72 385.49 P
+0.25 0.03 (giving larger quanta for services than for user applications. Reducing time quanta for) 124.72 373.49 B
+0.25 0.05 (interactive processes is something which is utilized in Windows NT [12] where time) 124.72 361.49 B
+0.25 0.04 (quanta differ between the server version and the workstation version of the operating) 124.72 349.49 B
+0.25 0.04 (system. In both UNIX and Windows NT, every process that receives user input from) 124.72 337.49 B
+0.13 (keyboard or mouse gets a boost in priority, which is another way of ensuring that user) 124.72 325.49 P
+0.25 0.03 (processes gets the CPU time needed. By identifying processes as user applications or) 124.72 313.49 B
+(system services, one can make such priority boosts even more fine-grained.) 124.72 301.49 T
+4 14 Q
+(7  Discussion) 124.72 272.83 T
+0 10 Q
+0.25 0.19 (Comparing this operating system architecture with the commonly available kernel) 124.72 257.49 B
+0.25 0.02 (architectures, ABOS differs mostly in that the kernel functionality is run as a number) 124.72 245.49 B
+0.08 (of stand-alone processes. The number of context switches increase, and hence the per-) 124.72 233.49 P
+0.25 0.13 (formance decrease. However, the flexibility is increased manifold by allowing new) 124.72 221.49 B
+-0.08 (services to be added or replace old ones at runtime. For example, you can install a new) 124.72 209.49 P
+0.17 (release of the operating system without even having to restart the computer! Since the) 124.72 197.49 P
+-0.07 (functionality is all located in autonomous modules, all dependencies and open connec-) 124.72 185.49 P
+0.25 0.12 (tions will still be open and valid when a new service is installed to replace an older) 124.72 173.49 B
+0.25 0.11 (one. Unlike UNIX where almost the entire operating system is duplicated as library) 124.72 161.49 B
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(9) 295.14 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.17 (functions into every process [13], the functionality in ABOS is divided into stand-) 124.72 693.49 B
+(alone processes.) 124.72 681.49 T
+0.25 0.05 (The division into the four layers core, kernel, service, and user, gives a possibility to) 124.72 663.49 B
+0.25 0.14 (consider the type of process when scheduling and setting time quanta. Server proc-) 124.72 651.49 B
+0.25 0.02 (esses usually gain by running longer periods, user processes work better with smaller) 124.72 639.49 B
+0.25 0.2 (time quanta. In a traditional operating system, there is usually only one rule when) 124.72 627.49 B
+0.02 (scheduling is considered, namely to spend as little time as possible in kernel mode. As) 124.72 615.49 P
+0.25 0.2 (there only exists two modes, user and kernel, you have no possibility to affect the) 124.72 603.49 B
+(scheduling policies further.) 124.72 591.49 T
+0.25 0.05 (Since the different parts of the kernel are no longer compiled together, one can think) 124.72 573.49 B
+0.25 0.02 (that there are high demands on well-specified protocols and interfaces for the various) 124.72 561.49 B
+0.12 (agents. This is true to some extent but not fully. You need a minimal baseline of com-) 124.72 549.49 P
+0.25 0.11 (mands that are standard for each service, but each agent can provide any number of) 124.72 537.49 B
+0.25 0.23 (extra functions as well. Agents can also reduce the original set of calls by simply) 124.72 525.49 B
+0.25 0.09 (ignoring non-supported messages or reply with an \324invalid command\325 message. The) 124.72 513.49 B
+0.25 0.25 (point of having at least a minimal set of commands is that the semantics of these) 124.72 501.49 B
+0.18 (method calls can be coded into calling agents. On top of these minimal protocols, you) 124.72 489.49 P
+(can agree upon a certain ontology in which you will talk to the specific agent.) 124.72 477.49 T
+0.23 (To achieve the flexibility strived for, the calling protocols must define mechanisms to) 124.72 459.49 P
+0.25 0.06 (take over control for specific tasks. So can, for example, a file-encryption agent take) 124.72 447.49 B
+0.25 0.06 (control over the \324write\325 and \324read\325 commands from the file system agent, and in turn) 124.72 435.49 B
+0.25 0.05 (call the file system agent to store the file once it has been encrypted. Another way to) 124.72 423.49 B
+0.19 (solve this would be to tell the file system agent to ask the file-encryption agent before) 124.72 411.49 P
+0.25 0 (storing or loading. Which strategy to use is just a matter of design, and is not handled) 124.72 399.49 B
+(in this paper.) 124.72 387.49 T
+0.25 0.16 (The solution with advanced managers in the kernel layer makes it possible to have) 124.72 369.49 B
+0 (more than one manager for processes and memory. In this way an application can pro-) 124.72 357.49 P
+0.19 (vide a special process manager that takes care of a subset of the processes to schedule) 124.72 345.49 P
+0.2 (these in another way. The paging algorithms can in the same way differ depending on) 124.72 333.49 P
+0.25 0.01 (the application. More forms of communication can be added in a similar way by add-) 124.72 321.49 B
+0.25 0.12 (ing communication managers. Having several process or memory manager requires) 124.72 309.49 B
+0.25 0.17 (that these are implemented to be aware of this situation, communicating with each) 124.72 297.49 B
+(other to decide who should take care of what process.) 124.72 285.49 T
+0.25 0.06 (It should be noted that we have taken the agent strategy to an extreme. The point we) 124.72 267.49 B
+-0.15 (are trying to make is that you) 124.72 255.49 P
+3 F
+-0.15 (can) 243.36 255.49 P
+0 F
+-0.15 ( perform all the tasks of an ordinary operating system) 257.8 255.49 P
+0.25 0.13 (with a multi-agent system. This does not mean that it is always the best solution. It) 124.72 243.49 B
+0.13 (might be better to have certain parts as a standard module-based operating system and) 124.72 231.49 P
+(employ agent-based techniques in other places of the operating systems.) 124.72 219.49 T
+0.25 0.43 (The core modules, acting as an interface to hardware, are inherently harder to) 124.72 201.49 B
+0.25 0.13 (exchange than the kernel agents outside of the core. This is not because they are so) 124.72 189.49 B
+0.25 0.08 (deeply needed by the system, but rather because they involve machine specific code) 124.72 177.49 B
+0.25 0.02 (and optimization. Still, we have strived to keep them as small as possible, putting the) 124.72 165.49 B
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(10) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.05 (more algorithmic behaviour into agents in kernel-space. This approach enables func-) 124.72 693.49 B
+-0.25 (tionality to be replaced and added at runtime, without disrupting the system. Behaviour) 124.72 681.49 P
+(can also be altered without extensive knowledge about the target platform.) 124.72 669.49 T
+0.25 0.09 (The operating system can very well work without the notion of users, and processes) 124.72 651.49 B
+0.25 0.13 (should be secure from each other by default, unless they state otherwise by sharing) 124.72 639.49 B
+0.25 0.02 (memory or communicating to untrusted agents. Accordingly, we do not introduce the) 124.72 627.49 B
+0.25 0.17 (notion of users until at the service layer. Users should be seen as a convenience to) 124.72 615.49 B
+0.25 0.08 (achieve security but the lower layers function without them. Nevertheless it helps to) 124.72 603.49 B
+0.25 0.12 (have some user awareness like the owners of processes and files. The kernel agents) 124.72 591.49 B
+0.25 0.13 (map a user ID as ownership and ask the user manager agent in the service layer for) 124.72 579.49 B
+0.25 0.12 (information about the access rights when needed. If no user manager is present, the) 124.72 567.49 B
+0.25 0.03 (kernel agents fall back to some default behaviour. The reasoning considering process) 124.72 555.49 B
+-0.14 (migration is similar. It is a desirable feature, but the operating system can manage very) 124.72 543.49 P
+0.25 0.12 (well without it. Strictly speaking, the support given at the kernel level is with some) 124.72 531.49 B
+0.25 0 (exceptions that of a single-user, single-computer system and the service layer extends) 124.72 519.49 B
+(this to be a multi-user distributed system.) 124.72 507.49 T
+0.25 0.01 (Naturally, this division can be discussed from the perspective of performance, but we) 124.72 489.49 B
+0.25 0.05 (believe that the cost for context switches and IPC communication is small enough to) 124.72 477.49 B
+0.25 0.1 (be negligible, considering the vast improvements gained in flexibility and structure.) 124.72 465.49 B
+0.14 (There is virtually an equal amount of data to be stored when performing an in-process) 124.72 453.49 P
+-0.24 (function call as when doing a context switch. The data to be loaded for the new process) 124.72 441.49 P
+0 (is however larger, but still small enough not to make this a real problem. With modern) 124.72 429.49 P
+-0.14 (processors it is a matter of mere microseconds to conduct a context switch. As for IPC,) 124.72 417.49 P
+0.25 0.21 (one can by using shared memory reduce this task to the same level as if you were) 124.72 405.49 B
+(putting something on the heap before a function call.) 124.72 393.49 T
+4 12 Q
+(Ser) 124.72 366.16 T
+(vice la) 144.19 366.16 T
+(y) 180.64 366.16 T
+(er) 187.2 366.16 T
+0 10 Q
+0.25 0.03 (Something completely new that we have introduced is the service layer. We have not) 124.72 353.49 B
+0.25 0.03 (found evidence of anything similar in the operating system literature. The motivation) 124.72 341.49 B
+0.25 0.06 (behind this layer is that there are things that are part of the operating system, but not) 124.72 329.49 B
+0.25 0.04 (needed by the kernel. These services should be allowed to run in kernel mode if they) 124.72 317.49 B
+-0.03 (need to, and they should be able to communicate with the kernel in a leisurely fashion.) 124.72 305.49 P
+-0.05 (In some cases the kernel agents are even aware of the existence of services in the serv-) 124.72 293.49 P
+(ice layer to for example authenticate requests from users with the user manager.) 124.72 281.49 T
+-0.13 (In traditional operating systems there is a very strict division. Either you are in the ker-) 124.72 263.49 P
+-0.09 (nel or you are outside it running in user mode and forced to rely on the functionality of) 124.72 251.49 P
+0.06 (the kernel. We believe that by adding a service layer one makes this border more flex-) 124.72 239.49 P
+-0.21 (ible since you can have non-essential functionality running in kernel mode and the ker-) 124.72 227.49 P
+(nel agents can also rely on the presence of the service.) 124.72 215.49 T
+4 14 Q
+(8  Ev) 124.72 186.83 T
+(aluation of ABOS) 157.13 186.83 T
+0 10 Q
+-0.13 (The flexibility goal has been achieved with the ABOS kernel described above. Replac-) 124.72 171.49 P
+0.25 0.09 (ing a kernel agent is simply a question of starting the new service parallel to the old) 124.72 159.49 B
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(11) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.08 (one, and then gradually take over the functions from it, by querying about its status.) 124.72 693.49 B
+0.24 (The final cut is done by moving the communications channels to the new agent. Add-) 124.72 681.49 P
+(ing functionality is even easier, since it merely involves starting up a new agent.) 124.72 669.49 T
+0.25 0.05 (Moreover, having extensive support for communication and network communication) 124.72 651.49 B
+0.25 0.13 (in the kernel to rely on increases productivity when developing distributed applica-) 124.72 639.49 B
+0.25 0.04 (tions. If the communication primitives also define a flexible communication protocol) 124.72 627.49 B
+-0.02 (like KQML [14] that can be used as an all-purpose communication language, it should) 124.72 615.49 P
+-0.1 (at least be easier to program in a distributed fashion. Supporting process migration and) 124.72 603.49 P
+0.25 0.03 (including location independence in the communications protocol facilitates such pro-) 124.72 591.49 B
+(gramming even further.) 124.72 579.49 T
+0.25 0.03 (Security should always be a goal when designing systems like this. Fault-tolerance is) 124.72 561.49 B
+0.25 0.04 (handled by the autonomous qualities of the various subsystems but is ultimately con-) 124.72 549.49 B
+0.25 0.3 (trolled by their respective implementation. Protection against malignant users is) 124.72 537.49 B
+0.17 (achieved by adding security agents in the service layer which interested managers can) 124.72 525.49 P
+0.25 0.07 (call as a part of their operations. Agents knowing that their services are of a delicate) 124.72 513.49 B
+(nature can require authentication from the service layer before executing requests.) 124.72 501.49 T
+-0.05 (Performance, which is also always expected from operating systems, is something that) 124.72 483.49 P
+-0.12 (we have not taken into consideration when designing the system. A quick glance at the) 124.72 471.49 P
+-0.05 (design shows that the number of context switches will increase significantly compared) 124.72 459.49 P
+0.07 (to an ordinary system, as will interprocess communication. The division of the operat-) 124.72 447.49 P
+0.25 0.1 (ing system kernel into several layers increases the possibilities for smart scheduling) 124.72 435.49 B
+0.25 0.03 (and varying time quanta depending on in which layer the process can be found. Run-) 124.72 423.49 B
+-0.21 (ning kernel modules as separate processes means that parts of the operating system can) 124.72 411.49 P
+0.25 0.1 (be swapped out at times, decreasing memory demands. If the scheduling algorithms) 124.72 399.49 B
+-0.17 (are similar to UNIX, processes that have been idle a long time will be swapped out and) 124.72 387.49 P
+0.25 0 (removed from the primary run queue [15], implying that the entire kernel need not be) 124.72 375.49 B
+(in the primary run queue.) 124.72 363.49 T
+4 14 Q
+(9  Case stud) 124.72 334.83 T
+(y: The \336le system) 206.99 334.83 T
+0 10 Q
+0.25 0.11 (As there is no space to describe the entire ABOS in detail we have chosen to take a) 124.72 319.49 B
+0.25 0.29 (closer look at one topic; the file system. More details about other parts has been) 124.72 307.49 B
+(described by Svahnberg [18].) 124.72 295.49 T
+-0.08 (Over the past 20 years, not much has happened with the file systems we use. The same) 124.72 277.49 P
+0.06 (conceptual notions of files and folders are still used. Files are dead objects, a dumping) 124.72 265.49 P
+-0.1 (place for applications to ensure persistence. Directories were added to be able to group) 124.72 253.49 P
+0.25 0.03 (logically connected files and handle them as a single entity. In recent years an ability) 124.72 241.49 B
+-0.11 (to encrypt files has been added. This was done because users requested a security level) 124.72 229.49 P
+0.25 0.22 (not supported by the applications in use. Furthermore, networked file systems are) 124.72 217.49 B
+0.25 0.01 (commonly added as an afterthought, working on top of the traditional file system. An) 124.72 205.49 B
+0.25 0.21 (explicit command is needed to distribute a certain directory tree, causing troubles) 124.72 193.49 B
+0.25 0.15 (when one is working from another machine. This could be viewed as an advantage) 124.72 181.49 B
+0.2 (when it comes to security, but security is handled with access rights for the individual) 124.72 169.49 P
+(files, so this safety effort can be considered redundant.) 124.72 157.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(12) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.05 (Caching is in most systems rudimentary at best. There is always a problem to ensure) 124.72 693.49 B
+0.25 0.03 (that the file read is the most recent one, and that no cached versions exist somewhere) 124.72 681.49 B
+0.14 (in the network. One common way to solve this is to have write-through caches, which) 124.72 669.49 P
+-0.19 (decreases performance but ensures that all data is directly stored to disk. If the network) 124.72 657.49 P
+0.25 0.05 (should go down for some reason you cannot save any files since the remote disk and) 124.72 645.49 B
+(the network fileserver is no longer accessible.) 124.72 633.49 T
+4 12 Q
+(Active Documents) 124.72 606.16 T
+0 10 Q
+0.05 (Fredriksson has recognized the fact that documents are passive objects [16]. He writes) 124.72 593.49 P
+0.25 0.04 (that you have to rely on external software like word processors and database systems) 124.72 581.49 B
+0.25 0.24 (for the documents to get any behaviour. The attempts at making documents more) 124.72 569.49 B
+0.25 0.17 (active, like compound documents and OLE [17] are very limited. The autonomous) 124.72 557.49 B
+0.24 (behaviour one can achieve in compound documents is a patch solution, and cannot be) 124.72 545.49 P
+0.25 0.14 (modified to fit ones own needs. OLE is primarily concerned with visualization and) 124.72 533.49 B
+-0.08 (linking of data between a set of documents. The documents are still inanimate and rely) 124.72 521.49 P
+0.25 0.12 (on the word processor to support the OLE or compound document framework. Fre-) 124.72 509.49 B
+-0.22 (driksson outlines a solution to this application dependence, namely by embedding each) 124.72 497.49 P
+0.25 0.17 (document in an agent. This agent can have arbitrary behaviour, sending updates to) 124.72 485.49 B
+(concerned parties or simply update itself according to some rules.) 124.72 473.49 T
+0.25 0.01 (We claim that these theories are just as valid for files in general, not only documents,) 124.72 455.49 B
+0.25 0.21 (and that by making each file an agent we can gain many benefits. Things like file) 124.72 443.49 B
+0.25 0.01 (dependencies, for example between source code files and their compiled equivalence,) 124.72 431.49 B
+0 (can be managed by the files themselves, thus removing the need for a specific \324make\325-) 124.72 419.49 P
+0.25 0.14 (program. Caching over the network can also be handled in a smart way by actually) 124.72 407.49 B
+0.25 0.16 (moving the file to the computer where it is used most, and storing an image on the) 124.72 395.49 B
+0.25 0.07 (server when the computer and network load permits, or when the server requests the) 124.72 383.49 B
+(file for backup.) 124.72 371.49 T
+4 12 Q
+(Solution) 124.72 344.16 T
+0 10 Q
+-0.14 (The file system manager resides in kernel mode. It defines standard file operations like) 124.72 331.49 P
+-0.04 (open, read, write, and close. In addition, it also defines interfaces for setting up associ-) 124.72 319.49 P
+0.25 0.15 (ation tables for newly created files, to make sure that files of a certain type gets an) 124.72 307.49 B
+0.2 (agent of corresponding type wrapped around the data. So should, for example, a word) 124.72 295.49 P
+0.25 0.15 (document get assigned to a word-document agent by default. File types that do not) 124.72 283.49 B
+-0.07 (have an agent associated with them are provided with a default agent from the file sys-) 124.72 271.49 P
+0.25 0.16 (tem manager. This default agent implements the traditional operations and provide) 124.72 259.49 B
+(basic protection mechanisms.) 124.72 247.49 T
+0.12 (A request for reading or writing to a file is forwarded to the specific file, and this may) 124.72 229.49 P
+0.25 0.11 (then decide whether to accept the request or not. Files can thus decide on their own) 124.72 217.49 B
+0.25 0.3 (who should be allowed to operate on it, and also which programs that should be) 124.72 205.49 B
+0.25 0.05 (allowed to access the file. The role of the file system manager is by this reduced to a) 124.72 193.49 B
+0.25 0.03 (simple interface to load the file agents from the disk device driver. A default caching) 124.72 181.49 B
+0.25 0.19 (mechanism can be added, but the files should have an option to manage their own) 124.72 169.49 B
+0.25 0.09 (caching strategy. This will enable databases to have their own caching mechanisms,) 124.72 157.49 B
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(13) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.04 (whereas other files may decide that they are temporary enough to never be written to) 124.72 693.49 B
+(disk.) 124.72 681.49 T
+-0.12 (A distributed file system is accessed through a certain mount point, which is a separate) 124.72 663.49 P
+0.25 0.05 (file agent. This mount point agent will act as a bridge to the remote system, showing) 124.72 651.49 B
+-0.07 (the contents of the remote directory as if it existed on the local disk. All file operations) 124.72 639.49 P
+-0.23 (come through the communications manager, so the file system manager need not know) 124.72 627.49 P
+0.25 0.07 (whether it is a request from another computer or a local request that it is processing.) 124.72 615.49 B
+0.25 0.02 (The actual directory agent that is accessed via the mount point agent decides whether) 124.72 603.49 B
+0.25 0.25 (to accept or to refuse access from a certain host or mount point. The causes for a) 124.72 591.49 B
+0.19 (refusal can be anything from not being on a trusted network to a temporary lockout to) 124.72 579.49 P
+(perform system management or backups.) 124.72 567.49 T
+4 12 Q
+(Ev) 124.72 540.16 T
+(aluation of File System) 139.16 540.16 T
+0 10 Q
+0.25 0 (The agent file system described above gives enormous flexibility, since each file may) 124.72 527.49 B
+0.25 0.08 (have unique behaviour. You also reduce the need for specific programs traditionally) 124.72 515.49 B
+0.25 0.07 (needed to manage the files. Since the files carry their own behaviour they can easily) 124.72 503.49 B
+0.25 0.18 (move to a new host within the network or even a completely different host system) 124.72 491.49 B
+(\050running ABOS\051 on another network and still execute in their intended way.) 124.72 479.49 T
+0.25 0.04 (Having each file handling its own security and behaviour, and also the decision right) 124.72 461.49 B
+-0.12 (concerning who should be allowed to do what, gives an extensible security model. The) 124.72 449.49 P
+0.25 0.05 (file agent will not allow the file to be transported to an insecure host, nor will it give) 124.72 437.49 B
+0.25 0.02 (data to an unauthorized client. The file agent can also choose to show different views) 124.72 425.49 B
+0.25 0.06 (of the file to different clients in accordance to their specific security status. The files) 124.72 413.49 B
+0.25 0.17 (can also decide for themselves whether to encrypt the data or not. Letting the files) 124.72 401.49 B
+-0.02 (manage this by themselves removes the need for the file system manager to know spe-) 124.72 389.49 P
+0.25 0.01 (cifics about every file. Different encryption algorithms can be used for different files,) 124.72 377.49 B
+0.25 0.14 (improving performance on files with low demands on encryption compared to files) 124.72 365.49 B
+(with high demands.) 124.72 353.49 T
+0.25 0.05 (By letting each file agent manage its own caching mechanisms, file performance can) 124.72 335.49 B
+0.25 0.04 (to some extent be tuned for the individual systems. The main disadvantage regarding) 124.72 323.49 B
+0.25 0.1 (performance is that for each file request where the file agent is not already active, a) 124.72 311.49 B
+0.25 0.18 (new process will have to be created and the request forwarded via IPC. Removing) 124.72 299.49 B
+0.25 0.12 (some of the autonomicity of the files, reducing them to mere threads within the file) 124.72 287.49 B
+0.25 0.01 (system manager can reduce this bottleneck. To achieve better fault tolerance, one can) 124.72 275.49 B
+0.25 0.14 (have a set of file-agent nurseries that each takes care of a number of agent threads.) 124.72 263.49 B
+0.25 0.04 (These nursery agents can quickly optimize their numbers with regards to the average) 124.72 251.49 B
+-0.05 (number of file requests so that there are no more nursery agents than are needed at any) 124.72 239.49 P
+(given time.) 124.72 227.49 T
+0.25 0.06 (The mount point agent provides possibilities for redundant systems, letting the agent) 124.72 209.49 B
+0.04 (determine which file system to provide access to from a set of choices. If one server is) 124.72 197.49 P
+-0.03 (down, the agent points to the next one. It can also dynamically determine the fastest of) 124.72 185.49 P
+0 (a set of servers, and let the request go to this one. If the mounted file system is not just) 124.72 173.49 P
+0.25 0.05 (a read-only file system but is updated as well, the servers should of course work as a) 124.72 161.49 B
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(14) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.14 (cluster, cooperating to store the data in a fault-tolerant way and update servers that) 124.72 693.49 B
+0.25 0.05 (have been down with the changes made during their absence. The mount point agent) 124.72 681.49 B
+-0.09 (can also merge more than one directory to a single mount point, which might be useful) 124.72 669.49 P
+0.17 (if you need to install something that is larger than the disks you have available. If you) 124.72 657.49 P
+0.25 0.12 (in the future let each file creation request in this directory tree use the full path, the) 124.72 645.49 B
+0.25 0.2 (mount point agent can dynamically put the files on the least used disk, or work in) 124.72 633.49 B
+0.25 0.1 (accordance to the file\325s own preferences on storage space. A database log file agent) 124.72 621.49 B
+0.25 0.02 (may wish to have a disk with lots of space to grow in, but the actual database storage) 124.72 609.49 B
+0.25 0.22 (space knows its exact size on creation and is not expected to grow uncontrollably) 124.72 597.49 B
+(which means that it can be placed on the disk with the tightest fit.) 124.72 585.49 T
+0.25 0.19 (There is a data storage overhead involved for each file, since its state and perhaps) 124.72 567.49 B
+0.25 0 (binary executable should be stored together with the actual data. Doing a quick check) 124.72 555.49 B
+-0.18 (on a relatively large set of Java bytecode files gives that a standard class-file is approx-) 124.72 543.49 P
+0.25 0 (imately 5 kB in size. Assuming that a file agent requires several classes, the overhead) 124.72 531.49 B
+0.25 0.01 (might be as large as 50 kB. It should be noted that these figures may not be significa-) 124.72 519.49 B
+0.08 (tive at all, they are just based on estimations from our side. The actual) 124.72 507.49 P
+3 F
+0.08 (state) 408.57 507.49 P
+0 F
+0.08 ( of a file is) 427.46 507.49 P
+0.15 (however just a matter of a few bytes, so one can avoid the size problem by storing the) 124.72 495.49 P
+0.25 0.03 (binary code of the agent as a separate file, letting the file system manager launch this) 124.72 483.49 B
+0.25 0.22 (binary when a file is requested. This would mean that an agent is needed that can) 124.72 471.49 B
+0.25 0.32 (ensure that the required binaries are present at the future host if a file wishes to) 124.72 459.49 B
+0.25 0.1 (migrate. This is best done by the process migration agent. After all, a migrating file) 124.72 447.49 B
+-0.1 (agent is no different than any other migrating agent, and the mechanisms for migrating) 124.72 435.49 P
+(are still the same.) 124.72 423.49 T
+0.25 0 (Naturally there is a risk that the users get overloaded with extra parameters to keep in) 124.72 405.49 B
+0.25 0.05 (mind when creating a new file. It is not our intention to create more overhead. A file) 124.72 393.49 B
+0.22 (agent is automatically selected and created with respect to the file type similar to how) 124.72 381.49 P
+-0.09 (files are displayed with a specific icon in Windows NT. The users can write file agents) 124.72 369.49 P
+0.25 (of their own, but it is more the task of the software suppliers to provide agents for the) 124.72 357.49 P
+(different file types.) 124.72 345.49 T
+4 14 Q
+(10  Conc) 124.72 316.83 T
+(lusions) 182.8 316.83 T
+0 10 Q
+0.25 0.09 (Traditionally the structure of the operating system is static, and applications need to) 124.72 301.49 B
+0.25 0.03 (adjust to this structure. In some cases this implies a trade-off between what you want) 124.72 289.49 B
+0.25 0.15 (to do and what the operating system allows. ABOS allows developers to adjust the) 124.72 277.49 B
+0.25 0.02 (operating system kernel to the applications running on it, while still being able to run) 124.72 265.49 B
+(more than one program concurrently.) 124.72 253.49 T
+-0.12 (The service layer adds a new conceptual category of software; applications that are not) 124.72 235.49 P
+0.22 (part of the kernel tasks but still a part of the operating system. To have a special layer) 124.72 223.49 P
+0.17 (for these ensures that they are not involved in the kernel, but is still treated differently) 124.72 211.49 P
+(compared to user applications with regards to security and scheduling.) 124.72 199.49 T
+0.25 0.06 (The agent file system which we describe as a case study is a natural extension to the) 124.72 181.49 B
+0.25 0.09 (flexible kernel structure of ABOS. It enables complex behaviours in files to be con-) 124.72 169.49 B
+0.24 (structed and executed without the need for special software. Implementing parts of an) 124.72 157.49 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(15) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0.25 0.14 (application as file agents can reduce the complexity of the application, while at the) 124.72 693.49 B
+0.05 (same time increase the possibility for third-party products to interface the system, per-) 124.72 681.49 P
+(haps without even knowing it.) 124.72 669.49 T
+0.25 0.03 (We are convinced that future operating system kernels will be more modularized and) 124.72 651.49 B
+0.25 0.09 (customizable than they are today. Our work shows that agents provides a promising) 124.72 639.49 B
+(way to achieve this.) 124.72 627.49 T
+4 14 Q
+(11  Ref) 124.72 562.83 T
+(erences) 170.49 562.83 T
+0 10 Q
+(1.) 124.72 547.49 T
+1.76 (Bershad, B.) 138.9 547.49 P
+3 F
+1.76 (\322The Increasing Irrelevance of IPC performance for Microkernel-) 191.87 547.49 P
+(Based Operating Systems\323) 138.9 535.49 T
+0 F
+(, USENIX Microk) 246.67 535.49 T
+(ernels W) 320.17 535.49 T
+(orkshop, 1992.) 355.19 535.49 T
+(2.) 124.72 517.49 T
+0.58 (Douglis, F) 138.9 517.49 P
+0.58 (., Ousterhout, J.,) 180.91 517.49 P
+3 F
+0.58 (\322Transparent Process Migration: Design Alternatives) 250.99 517.49 P
+0.33 (and the Sprite Implementation\323) 138.9 505.49 P
+0 F
+0.33 (, Softw) 266.83 505.49 P
+0.33 (are-Practice & Experience, 21\0508\051: 757-785,) 295.95 505.49 P
+(August 1991.) 138.9 493.49 T
+(3.) 124.72 475.49 T
+1.12 (Homb) 138.9 475.49 P
+1.12 (ur) 163.7 475.49 P
+1.12 (g, P) 171.85 475.49 P
+1.12 (., v) 187.41 475.49 P
+1.12 (an Steen, M., T) 200.78 475.49 P
+1.12 (anenbaum, A. S.) 264.98 475.49 P
+3 F
+1.12 (\322An Architecture for A Scalable) 337.21 475.49 P
+0.44 (Wide Area Distributed System\323,) 138.9 463.49 P
+0 F
+0.44 (Proceedings of the Se) 272.05 463.49 P
+0.44 (v) 360.05 463.49 P
+0.44 (enth A) 364.9 463.49 P
+0.44 (CM SIGOPS Euro-) 391.89 463.49 P
+(pean W) 138.9 451.49 T
+(orkshop, A) 168.92 451.49 T
+(CM, Ne) 212.96 451.49 T
+(w Y) 244.93 451.49 T
+(ork, pp. 75-82, 1996.) 260.77 451.49 T
+(4.) 124.72 433.49 T
+0.58 (Dearle, A., Rosenber) 138.9 433.49 P
+0.58 (g, J., Hensk) 224.01 433.49 P
+0.58 (ens F) 272.01 433.49 P
+0.58 (., V) 293.18 433.49 P
+0.58 (aughan, F) 307.37 433.49 P
+0.58 (., Maciunas, K.) 346.59 433.49 P
+3 F
+0.58 (\322An Examina-) 411.92 433.49 P
+0.75 (tion of Operating System Support for Persistent Object Systems\323) 138.9 421.49 P
+0 F
+0.75 (, Proceedings of) 404.34 421.49 P
+(the 25th Ha) 138.9 409.49 T
+(w) 185.41 409.49 T
+(aii International Conference on System Sciences, v) 192.53 409.49 T
+(ol. 1, 1992.) 396.46 409.49 T
+(5.) 124.72 391.49 T
+0.27 (v) 138.9 391.49 P
+0.27 (an Steen, M., Hauck, F) 143.65 391.49 P
+0.27 (. J., T) 236.14 391.49 P
+0.27 (anenbaum, A. S.,) 258.38 391.49 P
+3 F
+0.27 (\322A Model for Worldwide Tracking) 330.58 391.49 P
+(of Distributed Objects\323) 138.9 379.49 T
+0 F
+(, Proceedings of TIN) 233.35 379.49 T
+(A 96, Eurescom, pp. 203-212, 1996.) 316.87 379.49 T
+(6.) 124.72 361.49 T
+1.64 (Hamilton, G., K) 138.9 361.49 P
+1.64 (ougiouris, P) 206.56 361.49 P
+1.64 (.) 255.43 361.49 P
+3 F
+1.64 (\322The Spring nucleus: A microkernel for objects\323) 262.08 361.49 P
+0 F
+1.64 (,) 468.05 361.49 P
+(Proceedings of the 1993 Summer Usenix Conference, June 1993.) 138.9 349.49 T
+(7.) 124.72 331.49 T
+1.98 (Engler) 138.9 331.49 P
+1.98 (, D. R., Kaashoek, F) 165.16 331.49 P
+1.98 (., O\325T) 253.65 331.49 P
+1.98 (oole Jr) 278.99 331.49 P
+1.98 (., J.) 307.35 331.49 P
+3 F
+1.98 (\322Exokernel: An Operating System) 327.7 331.49 P
+1.99 (Architecture for Application-Level Resource Management\323) 138.9 319.49 P
+0 F
+1.99 (, Proceedings of the) 385.15 319.49 P
+(Fifteenth Symposium on Operating Systems Principles, December 1995.) 138.9 307.49 T
+(8.) 124.72 289.49 T
+1.39 (Johansen, D., v) 138.9 289.49 P
+1.39 (an Renesse, R., Schneider) 202.82 289.49 P
+1.39 (, F) 310.47 289.49 P
+1.39 (. B.) 321.63 289.49 P
+3 F
+1.39 (\322Operating System Support for) 341.09 289.49 P
+0.3 (Mobile Agents\323) 138.9 277.49 P
+0 F
+0.3 (, Proceedings of the 5th IEEE W) 202.8 277.49 P
+0.3 (orkshop on Hot T) 334.6 277.49 P
+0.3 (opics in Operat-) 405.52 277.49 P
+(ing Systems, pp. 42-45, 1995.) 138.9 265.49 T
+(9.) 124.72 247.49 T
+-0.13 (Halsall, F) 138.9 247.49 P
+-0.13 (.) 176.86 247.49 P
+3 F
+-0.13 (\322Data Communications, Computer Networks and Open Systems, Fourth) 181.73 247.49 P
+(Edition\323) 138.9 235.49 T
+0 F
+(, Addison-W) 173.91 235.49 T
+(esle) 224.77 235.49 T
+(y Publishing Compan) 240.17 235.49 T
+(y Inc., 1996.) 326.7 235.49 T
+(10.) 124.72 217.49 T
+2.56 (v) 138.9 217.49 P
+2.56 (an Doorn, L., Homb) 143.65 217.49 P
+2.56 (ur) 232.24 217.49 P
+2.56 (g, P) 240.38 217.49 P
+2.56 (., T) 257.4 217.49 P
+2.56 (anenbaum, A. S.) 272.77 217.49 P
+3 F
+2.56 (\322Paramecium: An extensible) 349.34 217.49 P
+0.94 (object-based kernel\323) 138.9 205.49 P
+0 F
+0.94 (, Proceedings of Hot T) 223.99 205.49 P
+0.94 (opics in Operating Systems V) 317.79 205.49 P
+0.94 (, A) 439.73 205.49 P
+0.94 (CM,) 452.49 205.49 P
+(Ne) 138.9 193.49 T
+(w Y) 150.31 193.49 T
+(ork, pp. 86-89, 1995.) 166.15 193.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 15
+%%Page: "16" 16
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(16) 292.64 73.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(11.) 124.72 693.49 T
+2.02 (Homb) 138.9 693.49 P
+2.02 (ur) 163.7 693.49 P
+2.02 (g, P) 171.85 693.49 P
+2.02 (., v) 188.32 693.49 P
+2.02 (an Steen, M., T) 202.6 693.49 P
+2.02 (anenbaum, A. S.,) 269.53 693.49 P
+3 F
+2.02 (\322The Architectural Design of) 346.98 693.49 P
+0.79 (GLOBE: A Wide-Area Distributed System\323) 138.9 681.49 P
+0 F
+0.79 (, T) 315.93 681.49 P
+0.79 (echnical Report IR-422, Vrije Uni-) 327.14 681.49 P
+(v) 138.9 669.49 T
+(ersiteit Amsterdam, 1997.) 143.75 669.49 T
+(12.) 124.72 651.49 T
+0.85 (Russino) 138.9 651.49 P
+0.85 (vich, M.) 170.98 651.49 P
+3 F
+0.85 (\322Inside the Windows NT Scheduler, Part 1 & 2\323) 208.79 651.49 P
+0 F
+0.85 (, W) 410.34 651.49 P
+0.85 (indo) 425.23 651.49 P
+0.85 (ws NT) 442.76 651.49 P
+(Mag) 138.9 639.49 T
+(azine, July & August 1997.) 157.18 639.49 T
+(13.) 124.72 621.49 T
+0.69 (Stallings, W) 138.9 621.49 P
+0.69 (.) 188.12 621.49 P
+3 F
+0.69 (\322Operating Systems, 2nd edition\323) 193.81 621.49 P
+0 F
+0.69 (, Prentice Hall, Engle) 332.56 621.49 P
+0.69 (w) 420.21 621.49 P
+0.69 (ood Clif) 427.33 621.49 P
+0.69 (fs,) 460.83 621.49 P
+(Ne) 138.9 609.49 T
+(w Jerse) 150.31 609.49 T
+(y 07632, 1995.) 179.87 609.49 T
+(14.) 124.72 591.49 T
+0.51 (Labrou, Y) 138.9 591.49 P
+0.51 (., Finin, T) 179.21 591.49 P
+0.51 (.) 219.22 591.49 P
+3 F
+0.51 (\322Semantics and Conversations for an Agent Communication) 224.73 591.49 P
+1.84 (Language\323) 138.9 579.49 P
+0 F
+1.84 (, Proceedings of the Fifteenth International Conference on Arti\336cial) 184.46 579.49 P
+(Intelligence, pp. 584-591, 1997.) 138.9 567.49 T
+(15.) 124.72 549.49 T
+0.19 (T) 138.9 549.49 P
+0.19 (anenbaum, A. S.) 144.21 549.49 P
+3 F
+0.19 (\322Modern Operating Systems\323) 213.65 549.49 P
+0 F
+0.19 (, Prentice Hall, Engle) 334.58 549.49 P
+0.19 (w) 420.71 549.49 P
+0.19 (ood Clif) 427.83 549.49 P
+0.19 (fs,) 460.83 549.49 P
+(Ne) 138.9 537.49 T
+(w Jerse) 150.31 537.49 T
+(y 07632, 1992.) 179.87 537.49 T
+(16.) 124.72 519.49 T
+-0.22 (Fredriksson, M.) 138.9 519.49 P
+3 F
+-0.22 (\322Active Documents and their Applicability in Distributed Environ-) 204.57 519.49 P
+1.02 (ments\323) 138.9 507.49 P
+0 F
+1.02 (, Unpublished Master Thesis, Uni) 167.79 507.49 P
+1.02 (v) 306.63 507.49 P
+1.02 (ersity of Karlskrona/Ronneby) 311.48 507.49 P
+1.02 (, Pending) 431.75 507.49 P
+(release 1998.) 138.9 495.49 T
+(17.) 124.72 477.49 T
+0.03 (Persson, E.) 138.9 477.49 P
+3 F
+0.03 (\322Component Technology. Infrastructures and Enabling Technologies -) 186.19 477.49 P
+7.71 (a Short Survey\323) 138.9 465.49 P
+0 F
+7.71 (, LU-CS-TR:97-197, LUTEDX/\050TECS-3078\051/1-71/\0501997\051,) 218.76 465.49 P
+(Department of Computer Science, Lund Uni) 138.9 453.49 T
+(v) 316.4 453.49 T
+(ersity) 321.25 453.49 T
+(, 1997.) 342.82 453.49 T
+(18.) 124.72 435.49 T
+-0.09 (Sv) 138.9 435.49 P
+-0.09 (ahnber) 149.21 435.49 P
+-0.09 (g, M.) 176.24 435.49 P
+3 F
+-0.09 (\322Background Analysis and Design of ABOS, an Agent-Based Oper-) 199.94 435.49 P
+2.14 (ating System\323) 138.9 423.49 P
+0 F
+2.14 (, Unpublished Master Thesis, Uni) 197.42 423.49 P
+2.14 (v) 340.71 423.49 P
+2.14 (ersity of Karlskrona/Ronneby) 345.56 423.49 P
+2.14 (,) 468.05 423.49 P
+(Pending release 1998.) 138.9 411.49 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "16" 16
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 16
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Courier
+%%+ Times-Italic
+%%+ Helvetica-Bold
+%%EOF

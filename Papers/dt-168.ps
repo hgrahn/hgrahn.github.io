@@ -1,0 +1,4502 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+%	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 597.6 838.8 0 1 14 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Courier FMFONTDEFINE
+4 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+0 14 Q
+0 X
+(An Adaptive Update-Based Cache Coher) 136.32 683.61 T
+(ence Pr) 381.06 683.61 T
+(otocol) 425.51 683.61 T
+(for Reduction of Miss Rate and T) 183.44 666.61 T
+(raf\336c) 382.28 666.61 T
+1 10 Q
+(H\214kan Nilsson and Per Stenstr\232m) 231.3 636.28 T
+1 9 Q
+(Department of Computer Engineering, Lund University) 198.56 613.94 T
+(P) 226.22 602.94 T
+(.O. Box 1) 230.22 602.94 T
+(18, S-221 00 LUND, Sweden) 264.89 602.94 T
+0 F
+0.41 (Abstract.) 154.23 571.94 P
+1 F
+0.41 (Although directory-based write-invalidate cache coherence protocols) 192.63 571.94 P
+1.93 (have a potential to improve the performance of lar) 154.23 560.94 P
+1.93 (ge-scale multiprocessors,) 350.46 560.94 P
+0.88 (coherence misses limit the processor utilization. Therefore, so called competi-) 154.23 549.94 P
+1.21 (tive-update protocols \321 hybrid protocols between write-invalidate and write-) 154.23 538.94 P
+0.84 (update \321 have been considered as a means to reduce the coherence miss rate) 154.23 527.94 P
+-0.17 (and have been shown to be a better coherence policy for a wide range of applica-) 154.23 516.94 P
+-0.09 (tions. Unfortunately such protocols may cause high traf) 154.23 505.94 P
+-0.09 (\336c peeks for applications) 353.4 505.94 P
+0.65 (with extensive use of migratory objects. These traf) 154.23 494.94 P
+0.65 (\336c peeks can of) 341.07 494.94 P
+0.65 (fset the per-) 399.09 494.94 P
+(formance gain of a reduced miss rate if the network bandwidth is not suf) 154.23 483.94 T
+(\336cient.) 415.27 483.94 T
+-0.06 (W) 168.41 472.94 P
+-0.06 (e propose in this study to extend a competitive-update protocol with a pre-) 176.18 472.94 P
+1.33 (viously published adaptive mechanism that can dynamically detect migratory) 154.23 461.94 P
+0.16 (objects and reduce the coherence traf) 154.23 450.94 P
+0.16 (\336c they cause. Detailed architectural simu-) 288.58 450.94 P
+0.04 (lations based on \336ve scienti\336c and engineering applications show that this adap-) 154.23 439.94 P
+1.12 (tive protocol can outperform a write-invalidate protocol by reducing the miss) 154.23 428.94 P
+(rate and bandwidth need by as much as 71% and 26%, respectively) 154.23 417.94 T
+(.) 395.6 417.94 T
+0 12 Q
+(1  Intr) 125.89 390.94 T
+(oduction) 158.34 390.94 T
+1 10 Q
+-0.25 (Using private caches in conjunction with a directory-based cache coherence protocol is) 125.89 373.28 P
+0.72 (a uni\336ed approach to reduce memory system latencies in lar) 125.89 361.28 P
+0.72 (ge-scale multiprocessors) 372.4 361.28 P
+2.08 ([9]. Several cache coherence protocols have been proposed in the literature, both) 125.89 349.28 P
+(write-invalidate and write-update protocols.) 125.89 337.28 T
+-0.03 (Pure write-update protocols are not appropriate since they may incur a severe per-) 143.89 325.28 P
+0.92 (formance degradation as compared to write-invalidate protocols as a result of heavy) 125.89 313.28 P
+1.17 (network traf) 125.89 301.28 P
+1.17 (\336c. However) 176.03 301.28 P
+1.17 (, a previous study [6] has shown that a) 228.45 301.28 P
+2 F
+1.17 (competitive-update) 395.06 301.28 P
+1.13 (pr) 125.89 289.28 P
+1.13 (otocol) 134.41 289.28 P
+1 F
+1.13 (, a hybrid between write-invalidate and write-update protocols, outperforms) 159.41 289.28 P
+1.2 (write-invalidate protocols under relaxed memory consistency models [3] for a wide) 125.89 277.28 P
+0.11 (range of applications because of a lower miss rate. The idea of the competitive-update) 125.89 265.28 P
+0.11 (protocol is very simple. Instead of invalidating a copy of the block at the \336rst write by) 125.89 253.28 P
+-0.08 (another processor) 125.89 241.28 P
+-0.08 (, the copy is updated. However) 196.21 241.28 P
+-0.08 (, if the local processor does not access) 319.55 241.28 P
+-0.02 (the copy it is invalidated after a number of global updates determined by a) 125.89 229.28 P
+2 F
+-0.02 (competitive) 425.61 229.28 P
+(thr) 125.89 217.28 T
+(eshold) 137.19 217.28 T
+1 F
+(. As a result, only those copies regularly accessed are updated.) 163.3 217.28 T
+0.35 (Although competitive-update protocols have better performance they can be sub-) 143.89 205.28 P
+0.14 (optimal for coherence maintenance of) 125.89 193.28 P
+2 F
+0.14 (migratory objects) 280.73 193.28 P
+1 F
+0.14 ( [4]. The reason is that migra-) 351.7 193.28 P
+1.14 (tory objects are often accessed in a read-modify-write manner by each processor in) 125.89 181.28 P
+0.41 (turn, i.e., a processor \336rst reads the shared block and then updates the other copies of) 125.89 169.28 P
+1.18 (the block, then another processor reads and updates the block. Thus, the block will) 125.89 157.28 P
+125.89 721.29 471.71 732.63 R
+7 X
+V
+2 F
+0 X
+(T) 139.22 725.96 T
+(o appear in Parallel Ar) 143.86 725.96 T
+(chitectur) 237.38 725.96 T
+(es and Languages Eur) 272.56 725.96 T
+(ope \050P) 361.91 725.96 T
+(ARLE\051, July 1994) 387 725.96 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+2 10 Q
+0 X
+-0.06 (migrate) 125.89 686.28 P
+1 F
+-0.06 ( between caches. For a competitive-update protocol, there is a risk that updates) 157 686.28 P
+0.49 (are sent to caches whose processors will not access the block until it has been invali-) 125.89 674.28 P
+2.77 (dated due to the competitive threshold. This cause unnecessary traf) 125.89 662.28 P
+2.77 (\336c that may) 418.95 662.28 P
+0.57 (increase the read penalty) 125.89 650.28 P
+0.57 (, i.e., the time the processors must stall due to cache misses,) 226.07 650.28 P
+0.61 (for networks with insuf) 125.89 638.28 P
+0.61 (\336cient bandwidths. Therefore, write-invalidate is a better pol-) 221.13 638.28 P
+(icy for migratory blocks.) 125.89 626.28 T
+-0.22 (T) 143.89 614.28 P
+-0.22 (o reduce the traf) 149.3 614.28 P
+-0.22 (\336c of competitive-update protocols, and still maintain a low miss) 213.71 614.28 P
+0.49 (rate, we propose in this work to extend them with a previously published mechanism) 125.89 602.28 P
+1.35 ([2, 1) 125.89 590.28 P
+1.35 (1] that dynamically detects memory blocks exhibiting migratory sharing. Such) 145.19 590.28 P
+0.41 (blocks are handled with read-exclusive requests to avoid unnecessary network traf) 125.89 578.28 P
+0.41 (\336c,) 459.21 578.28 P
+(while all other blocks are handled according to the competitive-update policy) 125.89 566.28 T
+(.) 434.63 566.28 T
+0.34 (Based on a detailed architectural simulation study using \336ve parallel applications) 143.89 554.28 P
+2.03 (from the SPLASH benchmark suite [8] we \336nd that competitive-update protocols) 125.89 542.28 P
+0.49 (extended with a simple migratory detection mechanism can reduce the read miss rate) 125.89 530.28 P
+1.81 (by as much as 71% as compared to a write-invalidate protocol. Our experimental) 125.89 518.28 P
+0.58 (results also show that the bandwidth requirements of the applications can be reduced) 125.89 506.28 P
+0.56 (by 26% as compared to a write-invalidate protocol for applications exhibiting migra-) 125.89 494.28 P
+0.38 (tory sharing. The read miss rate and traf) 125.89 482.28 P
+0.38 (\336c reductions can also help reducing the read) 288.3 482.28 P
+(penalty by 42% as compared to a write-invalidate protocol.) 125.89 470.28 T
+0.78 (The rest of the paper is or) 143.89 458.28 P
+0.78 (ganized as follows. As a background, we begin in the) 251.13 458.28 P
+-0.07 (next section by de\336ning what migratory sharing is and how previously proposed cache) 125.89 446.28 P
+0.7 (coherence policies act with respect to migratory sharing. This serves as a motivation) 125.89 434.28 P
+0.97 (for the adaptive protocol we propose in Section 3. W) 125.89 422.28 P
+0.97 (e move on to the experimental) 345.48 422.28 P
+-0.22 (evaluation in Sections 4 and 5 starting with the experimental methodology) 125.89 410.28 P
+-0.22 (, the detailed) 420.78 410.28 P
+1.8 (architectural assumptions, and the benchmark programs used in Section 4 and the) 125.89 398.28 P
+(experimental results in Section 5. Finally) 125.89 386.28 T
+(, we conclude the study in Section 6.) 289.68 386.28 T
+0 12 Q
+(2  Cache Coher) 125.89 358.94 T
+(ence Pr) 204.65 358.94 T
+(otocols and Migratory Sharing) 242.75 358.94 T
+1 10 Q
+-0.13 (In this section we \336rst present our architectural framework. Then we discuss migratory) 125.89 341.28 P
+0.82 (sharing and how a write-invalidate protocol can be optimized for this type of access) 125.89 329.28 P
+-0.14 (pattern. Finally) 125.89 317.28 P
+-0.14 (, we brie\337y describe how the competitive-update protocol works and its) 186.21 317.28 P
+(performance limitations with respect to migratory objects.) 125.89 305.28 T
+0 F
+(2.1  The Ar) 125.89 281.28 T
+(chitectural Framework) 174.04 281.28 T
+1 F
+1.37 (Our architectural framework is a cache coherent non-uniform memory access \050CC-) 125.89 264.28 P
+0.91 (NUMA\051 architecture with a directory-based cache coherence protocol. The architec-) 125.89 252.28 P
+(ture consists of a number of processor nodes interconnected by a mesh network.) 125.89 240.28 T
+-0.08 (Each processor node consists of a processor with private caches, a local portion of) 143.89 228.28 P
+1.06 (the shared memory) 125.89 216.28 P
+1.06 (, and the network interface control, all connected by a local bus.) 204.01 216.28 P
+0.41 (Global cache coherence is supported by a directory-based full-map protocol [5]; each) 125.89 204.28 P
+-0.11 (memory block associates a presence-\337ag vector indicating which nodes have a copy of) 125.89 192.28 P
+1.11 (the block. W) 125.89 180.28 P
+1.11 (e refer to the node where the page containing the block is allocated as) 178.69 180.28 P
+2 F
+0.61 (home) 125.89 168.28 P
+1 F
+0.61 (,) 147.55 168.28 P
+2 F
+0.61 (local) 153.15 168.28 P
+1 F
+0.61 ( as the node from which the request originated, and \336nally) 173.15 168.28 P
+2 F
+0.61 (r) 415.33 168.28 P
+0.61 (emote) 418.85 168.28 P
+1 F
+0.61 ( as any) 442.73 168.28 P
+(other node involved in a coherence action.) 125.89 156.28 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+1.5 (In a CC-NUMA multiprocessor the processor stall times due to completion of) 143.89 686.28 P
+1.14 (memory accesses limit the performance of the whole system and stem mainly from) 125.89 674.28 P
+1.29 (two reasons; the read stall time arises from cache misses while the write stall time) 125.89 662.28 P
+0.23 (arises when propagating new values to remote copies upon processor writes. Previous) 125.89 650.28 P
+1.21 (studies have shown that it is possible to hide all write latency) 125.89 638.28 P
+1.21 (, and thus remove all) 383.27 638.28 P
+0.56 (write stall time, by using a relaxed memory consistency model, e.g., Release Consis-) 125.89 626.28 P
+1.2 (tency \050RC\051 [3], and suf) 125.89 614.28 P
+1.2 (\336cient amount of buf) 222.99 614.28 P
+1.2 (fering in the local node. This has been) 310.57 614.28 P
+2.66 (shown possible both under write-invalidate protocols [3] and under competitive-) 125.89 602.28 P
+-0.04 (update protocols [6]. In order to achieve high performance we assume in this study the) 125.89 590.28 P
+(Release Consistency model.) 125.89 578.28 T
+0 F
+(2.2  Migratory Sharing and W) 125.89 554.28 T
+(rite-Invalidate Pr) 255.16 554.28 T
+(otocols) 329.69 554.28 T
+1 F
+0.38 (Gupta and W) 125.89 537.28 P
+0.38 (eber classify data objects based on the access pattern they exhibit in [4].) 179.17 537.28 P
+2 F
+0.35 (Migratory data objects) 125.89 525.28 P
+1 F
+0.35 ( are manipulated by many processors but only a single proces-) 218.81 525.28 P
+1.39 (sor at any given time. In parallel programs such objects are not unusual, e.g., data) 125.89 513.28 P
+-0.2 (structures that are accessed in critical sections and high-level language statements such) 125.89 501.28 P
+(as) 125.89 489.28 T
+3 F
+(I:=I+1) 136.72 489.28 T
+1 F
+( exhibit migratory sharing.) 172.72 489.28 T
+1.03 (A way of formally de\336ning migratory sharing is as a sequence of read-modify-) 143.89 477.28 P
+1.66 (write actions by alternating processors on a data object [1) 125.89 465.28 P
+1.66 (1]. The global reference) 370.67 465.28 P
+0.99 (stream to a migratory object can then be described by the following regular expres-) 125.89 453.28 P
+(sion:) 125.89 441.28 T
+(... \050R) 179.6 424.28 T
+2 9.6 Q
+(i) 199.6 421.28 T
+1 10 Q
+(\051 \050R) 202.26 424.28 T
+2 9.6 Q
+(i) 218.1 421.28 T
+1 10 Q
+(\051* \050W) 220.76 424.28 T
+2 9.6 Q
+(i) 244.36 421.28 T
+1 10 Q
+(\051 \050R) 247.03 424.28 T
+2 9.6 Q
+(i) 262.86 421.28 T
+1 10 Q
+( | W) 265.53 424.28 T
+2 9.6 Q
+(i) 281.97 421.28 T
+1 10 Q
+(\051* \050R) 284.64 424.28 T
+2 9.6 Q
+(j) 305.47 421.28 T
+1 10 Q
+(\051 \050R) 308.14 424.28 T
+2 9.6 Q
+(j) 323.97 421.28 T
+1 10 Q
+(\051* \050W) 326.64 424.28 T
+2 9.6 Q
+(j) 350.24 421.28 T
+1 10 Q
+(\051 \050R) 352.91 424.28 T
+2 9.6 Q
+(j) 368.74 421.28 T
+1 10 Q
+( | W) 371.4 424.28 T
+2 9.6 Q
+(j) 387.85 421.28 T
+1 10 Q
+(\051*...) 390.51 424.28 T
+(\0501\051) 460.05 424.28 T
+0.32 (where R) 143.89 407.28 P
+2 9.6 Q
+0.31 (i) 177.81 404.28 P
+1 10 Q
+0.32 (and W) 183.18 407.28 P
+2 9.6 Q
+0.31 (i) 209.88 404.28 P
+1 10 Q
+0.32 ( represent a read access and a write access, respectively) 212.55 407.28 P
+0.32 (, by pro-) 436.91 407.28 P
+0.4 (cessor) 125.89 395.28 P
+2 F
+0.4 (i) 153.78 395.28 P
+1 F
+0.4 (, \324*\325 denotes zero or more occurrences of the preceding string, and \324|\325 denotes) 156.56 395.28 P
+(the logical OR-operation.) 125.89 383.28 T
+2.8 (W) 143.89 371.28 P
+2.8 (rite-invalidate protocols rely on invalidation of remote copies to maintain) 152.93 371.28 P
+-0.22 (coherence among cached copies of a shared memory block. In a write-invalidate proto-) 125.89 359.28 P
+-0.23 (col, the regular expression \0501\051 results in the following coherence actions: If the block is) 125.89 347.28 P
+0.95 (not present in cache) 125.89 335.28 P
+2 F
+0.95 (i) 211.87 335.28 P
+1 F
+0.95 (, R) 214.65 335.28 P
+2 9.6 Q
+0.91 (i) 227.27 332.28 P
+1 10 Q
+0.95 ( results in a read-miss request and the block is loaded into) 229.94 335.28 P
+-0.22 (cache) 125.89 323.28 P
+2 F
+-0.22 (i) 150.92 323.28 P
+1 F
+-0.22 ( in a shared state. Upon the write request W) 153.7 323.28 P
+2 9.6 Q
+-0.21 (i) 326.66 320.28 P
+1 10 Q
+-0.22 ( to the block, the copy in memory is) 329.33 323.28 P
+(invalidated and cache) 125.89 311.28 T
+2 F
+(i) 215.03 311.28 T
+1 F
+( receives an exclusive \050dirty\051 copy of the block.) 217.81 311.28 T
+0.68 (When a subsequent processor) 143.89 299.28 P
+2 F
+0.68 (j) 267.69 299.28 P
+1 F
+0.68 ( reads the block \050R) 270.47 299.28 P
+2 9.6 Q
+0.65 (j) 348.73 296.28 P
+1 10 Q
+0.68 (\051 a cache miss is encountered) 351.4 299.28 P
+0.25 (and a read-miss request is forwarded to cache) 125.89 287.28 P
+2 F
+0.25 (i) 312.85 287.28 P
+1 F
+0.25 ( which has the exclusive copy) 315.63 287.28 P
+0.25 (. Cache) 435.94 287.28 P
+2 F
+0.25 (i) 468.93 287.28 P
+1 F
+0.59 (sends a copy to cache) 125.89 275.28 P
+2 F
+0.59 (j) 217.96 275.28 P
+1 F
+0.59 ( and the block becomes shared again. Later) 220.74 275.28 P
+0.59 (, when processor) 397.19 275.28 P
+2 F
+0.59 (j) 468.93 275.28 P
+1 F
+0.45 (modi\336es the block \050W) 125.89 263.28 P
+2 9.6 Q
+0.43 (j) 216.4 260.28 P
+1 10 Q
+0.45 (\051 the modi\336cation results in a) 219.07 263.28 P
+2 F
+0.45 (single) 341.2 263.28 P
+1 F
+0.45 ( invalidation message sent) 365.09 263.28 P
+0.34 (to cache) 125.89 251.28 P
+2 F
+0.34 (i) 162.1 251.28 P
+1 F
+0.34 (. An optimization is to mer) 164.88 251.28 P
+0.34 (ge the read-miss request and invalidation request) 274.17 251.28 P
+0.4 (into a single read-exclusive request. T) 125.89 239.28 P
+0.4 (wo previous papers have studied this) 279.36 239.28 P
+2 F
+0.4 (migratory) 431.71 239.28 P
+0.38 (optimization) 125.89 227.28 P
+1 F
+0.38 ( [2, 1) 175.9 227.28 P
+0.38 (1]. In both papers migratory blocks are dynamically detected by the) 197.12 227.28 P
+-0.09 (hardware and are handled by read-exclusive requests instead of separate read-miss and) 125.89 215.28 P
+0.47 (invalidation requests. This optimization reduces the network traf) 125.89 203.28 P
+0.47 (\336c because all single) 387.27 203.28 P
+1.1 (invalidations to migratory blocks are removed. However) 125.89 191.28 P
+1.1 (, the coherence miss rate is) 358.45 191.28 P
+(unaf) 125.89 179.28 T
+(fected.) 143.48 179.28 T
+1 (In [1) 143.89 167.28 P
+1 (1], they found that a write-invalidate protocol extended with the migratory) 163.68 167.28 P
+-0.17 (detection mechanism can reduce the number of global write requests by 96% for appli-) 125.89 155.28 P
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+1.52 (cations exhibiting migratory sharing. As a result, the network traf) 125.89 686.28 P
+1.52 (\336c is reduced by) 401.32 686.28 P
+(more than 20% for the studied applications with migratory sharing.) 125.89 674.28 T
+0 F
+(2.3  Competitive-Update Pr) 125.89 650.28 T
+(otocols and Migratory Sharing) 242.91 650.28 T
+1 F
+1.24 (In competitive-update protocols coherence is maintained by update messages rather) 125.89 633.28 P
+1.79 (than invalidation messages. Upon a write request, update messages are sent to all) 125.89 621.28 P
+0.54 (caches sharing the same memory block. In contrast to write-update protocols, a) 125.89 609.28 P
+2 F
+0.54 (com-) 451.72 609.28 P
+0.72 (petitive thr) 125.89 597.28 P
+0.72 (eshold) 169.85 597.28 P
+1 F
+0.72 (,) 195.96 597.28 P
+2 F
+0.72 (C) 201.68 597.28 P
+1 F
+0.72 (, is used to locally invalidate copies that are not accessed by the) 208.35 597.28 P
+0.9 (local processor between a number of updates, i.e., when a copy has been updated) 125.89 585.28 P
+2 F
+0.9 (C) 465.04 585.28 P
+1 F
+0.65 (times it is invalidated and the update messages to it ceases. A counter per cache line) 125.89 573.28 P
+0.68 (indicates the number of external updates since the last local access to the block. The) 125.89 561.28 P
+-0.19 (network traf) 125.89 549.28 P
+-0.19 (\336c is reduced as compared to a write-update protocol since only those cop-) 174.66 549.28 P
+0.28 (ies regularly accessed are updated. More details on how competitive-update protocols) 125.89 537.28 P
+0.06 (are implemented and a detailed performance evaluation are found in [6]. However) 125.89 525.28 P
+0.06 (, we) 454.99 525.28 P
+(give a brief description of the protocol and some of the main results below) 125.89 513.28 T
+(.) 423.25 513.28 T
+0.34 (On a local access to a block that resides in the cache, the counter associated with) 143.89 501.28 P
+1.12 (the block is preset to) 125.89 489.28 P
+2 F
+1.12 (C) 216.76 489.28 P
+1 F
+1.12 (. If a cache miss occurs, the block is fetched from memory) 223.43 489.28 P
+1.12 (,) 469.21 489.28 P
+1.56 (loaded into the cache, and the counter is preset to) 125.89 477.28 P
+2 F
+1.56 (C) 341.18 477.28 P
+1 F
+1.56 (. When the cache receives an) 347.85 477.28 P
+0.37 (update message from another processor) 125.89 465.28 P
+0.37 (, the cache controller checks the counter asso-) 285.27 465.28 P
+0.69 (ciated with the block. If the counter is zero the block is invalidated and an acknowl-) 125.89 453.28 P
+0.36 (edgment is returned to home indicating that the cache does not have a copy anymore,) 125.89 441.28 P
+0.14 (i.e., the updates to this cache ceases. Otherwise, the counter is decremented, the cache) 125.89 429.28 P
+1.39 (copy is updated, and an acknowledgment is sent to home indicating that the cache) 125.89 417.28 P
+(block is still valid.) 125.89 405.28 T
+1.09 (The performance evaluation in [6] shows that competitive-update protocols can) 143.89 393.28 P
+0.03 (reduce the read penalty by 46% as compared to write-invalidate protocols, mainly as a) 125.89 381.28 P
+0.24 (result of a highly reduced number of coherence misses \050up to 76% lower\051. The higher) 125.89 369.28 P
+0.73 (number of global writes under competitive-update protocols was shown not to of) 125.89 357.28 P
+0.73 (fset) 457.27 357.28 P
+0.71 (the reduced read penalty under Release Consistency) 125.89 345.28 P
+0.71 (, assuming a mesh network as in) 337.76 345.28 P
+(the Stanford DASH multiprocessor [5].) 125.89 333.28 T
+2.76 (Unfortunately) 143.89 321.28 P
+2.76 (, competitive-update protocols work suboptimally for migratory) 199.34 321.28 P
+0.62 (blocks since cached copies are often updated without any local access, and thus they) 125.89 309.28 P
+0.24 (are invalidated. This results in unnecessary network traf) 125.89 297.28 P
+0.24 (\336c. For networks with insuf) 351.22 297.28 P
+0.24 (\336-) 462.82 297.28 P
+-0.23 (cient bandwidth, contention may of) 125.89 285.28 P
+-0.23 (fset the bene\336ts of the competitive-update protocol.) 266.72 285.28 P
+-0.2 (T) 125.89 273.28 P
+-0.2 (o address this problem we propose in this study to extend the competitive-update pro-) 131.3 273.28 P
+1.54 (tocol with a previously published migratory detection mechanism [1) 125.89 261.28 P
+1.54 (1]. One would) 411.14 261.28 P
+-0.11 (expect that such an extended protocol would reduce the traf) 125.89 249.28 P
+-0.11 (\336c caused by blocks exhib-) 363.28 249.28 P
+0.07 (iting migratory sharing, while still maintaining the same low coherence miss rate as in) 125.89 237.28 P
+(the competitive-update protocol for blocks that do not exhibit migratory sharing.) 125.89 225.28 T
+0 12 Q
+(3  The Pr) 125.89 197.94 T
+(oposed Adaptive Pr) 173.34 197.94 T
+(otocol) 273.79 197.94 T
+1 10 Q
+0.49 (In this section we identify the hardware mechanisms and the protocol extensions that) 125.89 180.28 P
+0.7 (incorporate the) 125.89 168.28 P
+2 F
+0.7 (migratory detection mechanism) 190.05 168.28 P
+1 F
+0.7 ( into the competitive-update protocol,) 318.1 168.28 P
+(starting with a high-level view of the previously published detection mechanism [1) 125.89 156.28 T
+(1].) 457.43 156.28 T
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+0 10 Q
+0 X
+(3.1  A High-Level V) 125.89 686.28 T
+(iew of the Migratory Detection Mechanism) 210.24 686.28 T
+1 F
+0.28 (In order to identify migratory blocks, our) 125.89 669.28 P
+2 F
+0.28 (migratory detection mechanism) 295.05 669.28 P
+1 F
+0.28 ( \321 which is) 422.26 669.28 P
+1.12 (conceptually the same as in [1) 125.89 657.28 P
+1.12 (1] \321 detects the sequence W) 251.95 657.28 P
+2 9.6 Q
+1.08 (i) 374.48 654.28 P
+1 10 Q
+1.12 ( R) 377.15 657.28 P
+2 9.6 Q
+1.08 (j) 387.45 654.28 P
+1 10 Q
+1.12 ( W) 390.11 657.28 P
+2 9.6 Q
+1.08 (j) 403.18 654.28 P
+1 10 Q
+1.12 ( and classi\336es a) 405.85 657.28 P
+1.75 (memory block as migratory when W) 125.89 645.28 P
+2 9.6 Q
+1.68 (j) 281.58 642.28 P
+1 10 Q
+1.75 ( occurs. In [1) 284.25 645.28 P
+1.75 (1], Stenstr\232m) 341.9 645.28 P
+2 F
+1.75 (et al.) 401.8 645.28 P
+1 F
+1.75 ( distinguish) 423.56 645.28 P
+1.04 (between migratory blocks and ordinary blocks, i.e., those blocks that do not exhibit) 125.89 633.28 P
+-0.15 (migratory sharing. In their study) 125.89 621.28 P
+-0.15 (, cache coherence for ordinary blocks is maintained by) 254.35 621.28 P
+1.28 (a write-invalidate protocol. If all blocks are classi\336ed as ordinary by default, home) 125.89 609.28 P
+-0.06 (must detect when a block starts to be migratory) 125.89 597.28 P
+-0.06 (. By letting home keep track of the pro-) 314.17 597.28 P
+0.04 (cessor that most recently modi\336ed the block, i.e.,) 125.89 585.28 P
+2 F
+0.04 (i) 325.09 585.28 P
+1 F
+0.04 (, the block is classi\336ed as migratory) 327.87 585.28 P
+1.76 (when home receives a global write from processor) 125.89 573.28 P
+2 F
+1.76 (j) 344.32 573.28 P
+1 F
+1.76 ( given that the following two) 347.1 573.28 P
+(requirements are ful\336lled:) 125.89 561.28 T
+0 F
+(Condition 1 \050Migratory detection for write-invalidate pr) 140.06 544.28 T
+(otocols\051) 379.85 544.28 T
+1 F
+(1) 154.23 528.28 T
+2 F
+-0.28 (j) 168.41 528.28 P
+4 F
+-0.28 (\271) 174.29 528.28 P
+2 F
+-0.28 (i) 182.89 528.28 P
+1 F
+-0.28 (; the processor that issues the write request is not the same as the) 185.67 528.28 P
+(processor that most recently issued a write request to the block.) 168.41 516.28 T
+(2) 154.23 501.28 T
+(The number of block copies is exactly two.) 168.41 501.28 T
+0.19 (The hardware requirement is one) 125.89 484.28 P
+2 F
+0.19 (last-writer) 261.51 484.28 P
+1 F
+0.19 ( pointer \050L) 303.74 484.28 P
+0.19 (W\051 of size log) 346.15 484.28 P
+1 9.6 Q
+0.18 (2) 403.65 481.28 P
+2 10 Q
+0.19 (N) 411.14 484.28 P
+1 F
+0.19 ( bits, given) 417.81 484.28 P
+2 F
+0.19 (N) 465.04 484.28 P
+1 F
+0.24 (caches in the system, associated with each memory block to keep track of the identity) 125.89 472.28 P
+0.78 (of the processor that last modi\336ed the block and a bit denoting whether the memory) 125.89 460.28 P
+0.24 (block is migratory or not. For full-map protocols the number of copies can be derived) 125.89 448.28 P
+(from the content of the presence-\337ag vector) 125.89 436.28 T
+(.) 300.29 436.28 T
+0.14 (The detection mechanism described above is not directly applicable to a competi-) 143.89 424.28 P
+1.43 (tive-update protocol because in a competitive-update protocol it is not suf) 125.89 412.28 P
+1.43 (\336cient to) 435 412.28 P
+0.42 (know the number of block copies; a copy of the block may exist in a cache, although) 125.89 400.28 P
+-0.06 (the local processor has not accessed it since the last modi\336cation by another processor) 125.89 388.28 P
+-0.06 (.) 469.21 388.28 P
+-0.21 (W) 125.89 376.28 P
+-0.21 (e therefore reformulate Condition 1 in the next section to serve as a basis for how the) 134.53 376.28 P
+(detection mechanism is adjusted to \336t the competitive-update protocol.) 125.89 364.28 T
+0 F
+(3.2  A Competitive-Update Pr) 125.89 340.28 T
+(otocol with the Migratory Detection Mechanism) 252.63 340.28 T
+1 F
+-0.1 (Given sequence \0501\051 from Section 2.2, the migratory detection mechanism classi\336es the) 125.89 323.28 P
+0.94 (sequence as migratory when processor) 125.89 311.28 P
+2 F
+0.94 (j) 287.51 311.28 P
+1 F
+0.94 ( issues the write request \050W) 290.29 311.28 P
+2 8 Q
+0.75 (j) 405.82 308.78 P
+1 10 Q
+0.94 (\051. At this point,) 408.04 311.28 P
+-0.06 (there may exist an arbitrary number of copies, but at least two. Therefore, as a base for) 125.89 299.28 P
+(the detection algorithm, we reformulate requirement 2 in Condition 1:) 125.89 287.28 T
+0 F
+(Condition 2 \050Migratory detection for competitive-update pr) 140.06 270.28 T
+(otocols\051) 394.29 270.28 T
+1 F
+(1) 154.23 255.28 T
+2 F
+-0.23 (j) 168.41 255.28 P
+4 F
+-0.23 ( \271) 171.19 255.28 P
+2 F
+-0.23 (i) 182.13 255.28 P
+1 F
+-0.23 (; the processor that issues the write request is not the same as the) 184.91 255.28 P
+(processor that most recently issued a write request to the block.) 168.41 243.28 T
+(2) 154.23 228.28 T
+(Processors) 168.41 228.28 T
+2 F
+(i) 213.68 228.28 T
+1 F
+( and) 216.46 228.28 T
+2 F
+(j) 235.9 228.28 T
+1 F
+(are the only ones that may have read from the) 241.18 228.28 T
+(block since the write from processor) 168.41 216.28 T
+2 F
+(i) 316.71 216.28 T
+1 F
+(.) 319.49 216.28 T
+1.53 (Requirement 1 is the same for competitive-update protocols as for write-invalidate) 125.89 199.28 P
+0.07 (protocols. Therefore, we associate a) 125.89 187.28 P
+2 F
+0.07 (last-writer) 272.59 187.28 P
+1 F
+0.07 ( pointer \050L) 314.82 187.28 P
+0.07 (W\051 with each memory block) 357 187.28 P
+1.68 (also in this case. The L) 125.89 175.28 P
+1.68 (W pointer is updated on each global write request. As for) 225.77 175.28 P
+0.29 (requirement 2, however) 125.89 163.28 P
+0.29 (, the algorithm detects whether processor) 221.33 163.28 P
+2 F
+0.29 ( i) 387.21 163.28 P
+1 F
+0.29 (and processor) 395.58 163.28 P
+2 F
+0.29 (j) 453.93 163.28 P
+1 F
+0.29 (are) 459.5 163.28 P
+0.02 (the only ones that have read the block since the write from processor) 125.89 151.28 P
+2 F
+0.02 (i) 403.59 151.28 P
+1 F
+0.02 ( by letting home) 406.37 151.28 P
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+1.29 (ask all caches with a copy whether their processors have read the block since they) 125.89 686.28 P
+-0.12 (detected the write from processor) 125.89 674.28 P
+2 F
+-0.12 ( i) 259.24 674.28 P
+1 F
+-0.12 (. By checking the counter associated with the block,) 264.4 674.28 P
+-0.22 (each cache locally decides whether or not the processor has read the block after the last) 125.89 662.28 P
+0.85 (write by another processor) 125.89 650.28 P
+0.85 (. However) 234.24 650.28 P
+0.85 (, since the counter is also preset when the local) 276.34 650.28 P
+0.84 (processor writes to the block, an additional state is needed to determine whether the) 125.89 638.28 P
+0.84 (last update came from another processor or not. Home keeps track of migratory and) 125.89 626.28 P
+0.26 (ordinary memory blocks by a new stable state for memory blocks and a new transient) 125.89 614.28 P
+(state.) 125.89 602.28 T
+0.75 (When a processor) 143.89 590.28 P
+0.75 (,) 216.63 590.28 P
+2 F
+0.75 (i) 222.38 590.28 P
+1 F
+0.75 (, writes to a block that no other processor has updated since) 225.16 590.28 P
+0.56 (the last read by) 125.89 578.28 P
+2 F
+0.56 (i) 191.44 578.28 P
+1 F
+0.56 (, the block is deemed as a potentially migratory block. As we see to) 194.22 578.28 P
+1.29 (the left in Fig. 1, a MigrW) 125.89 566.28 P
+1.29 (r message is sent to home instead of an ordinary global) 238.8 566.28 P
+0.54 (write. Home checks whether \050L) 125.89 554.28 P
+0.54 (W =) 253.66 554.28 P
+2 F
+0.54 (i) 274.82 554.28 P
+1 F
+0.54 (\051. If \050L) 277.6 554.28 P
+0.54 (W =) 304.86 554.28 P
+2 F
+0.54 (i) 326.02 554.28 P
+1 F
+0.54 (\051 the write is treated as an ordinary) 328.8 554.28 P
+-0.17 (write. Otherwise, the memory block in home agrees that the block is potentially migra-) 125.89 542.28 P
+1.27 (tory and sends out MigrInv messages to those caches sharing the block. A cache) 125.89 530.28 P
+2 F
+1.27 (k) 467.27 530.28 P
+1 F
+-0.15 (responds to MigrInv in two ways; \050i\051) 125.89 518.28 P
+2 F
+-0.15 (k) 274.52 518.28 P
+1 F
+-0.15 ( agrees that the block is migratory \050MOk\051 if pro-) 278.96 518.28 P
+0.49 (cessor) 125.89 506.28 P
+2 F
+0.49 (k) 153.87 506.28 P
+1 F
+0.49 ( has not read the block since the last update or if the last global update origi-) 158.31 506.28 P
+0.25 (nated from) 125.89 494.28 P
+2 F
+0.25 (k) 172.48 494.28 P
+1 F
+0.25 (, or \050ii\051) 176.92 494.28 P
+2 F
+0.25 (k) 208.21 494.28 P
+1 F
+0.25 ( disagrees \050MNotOk\051 if the processor has read but not written to) 212.65 494.28 P
+1.69 (the block since the last update by another processor) 125.89 482.28 P
+1.69 (. Home classi\336es the block as) 344.94 482.28 P
+1.13 (migratory if) 125.89 470.28 P
+1.13 (f all acknowledgments are MOk. Then, exclusive ownership is given to) 174.89 470.28 P
+-0.01 (local by MW) 125.89 458.28 P
+-0.01 (rAck. By contrast, if at least one cache responds with MNotOk, the block) 178.24 458.28 P
+(is still classi\336ed as ordinary and a W) 125.89 446.28 T
+(rAck is sent to local.) 272.42 446.28 T
+0.29 (Read-miss requests to migratory blocks are handled according to the right part of) 143.89 319.08 P
+1.56 (Fig. 1. Local issues a GRd, as for ordinary blocks. Home knows that the block is) 125.89 307.08 P
+0.94 (migratory and requests \050MRdI\051 remote to send its exclusive copy back to home and) 125.89 295.08 P
+0.87 (invalidate its own copy) 125.89 283.08 P
+0.87 (. Remote responds with UMemI to home, which forwards an) 220.89 283.08 P
+(exclusive copy to local by the Migratory message.) 125.89 271.08 T
+0.65 (Like the protocol in [1) 143.89 259.08 P
+0.65 (1], a new cache state called) 236.11 259.08 P
+2 F
+0.65 (Migrating) 351.9 259.08 P
+1 F
+0.65 ( is needed to detect) 392.46 259.08 P
+-0.2 (when a block discontinues to be migratory) 125.89 247.08 P
+-0.2 (. For migratory blocks, home only sees read-) 294 247.08 P
+0.24 (miss requests and no write requests, i.e., home only sees the reference sequence R) 125.89 235.08 P
+2 9.6 Q
+0.23 (i) 456.97 232.08 P
+1 10 Q
+0.24 ( R) 459.64 235.08 P
+2 9.6 Q
+0.23 (j) 469.04 232.08 P
+1 10 Q
+1.86 (R) 125.89 223.08 P
+2 9.6 Q
+1.79 (k) 132.56 220.08 P
+1 10 Q
+1.86 (. As a result, home can not detect whether a processor has modi\336ed the block) 136.82 223.08 P
+0.32 (between two subsequent read-miss requests. T) 125.89 211.08 P
+0.32 (o solve this problem, a migratory block) 312.3 211.08 P
+0.08 (is loaded into the cache in state Migrating upon a read-miss. When the local processor) 125.89 199.08 P
+1.08 (modi\336es the block the state changes to Exclusive without any global actions. Later) 125.89 187.08 P
+1.08 (,) 469.21 187.08 P
+-0.02 (when remote receives MRdI from home, it decides whether the block is still migratory) 125.89 175.08 P
+0.82 (or not. If the block is in state Exclusive, it remains migratory and UMemI is sent to) 125.89 163.08 P
+0.45 (home. By contrast, if the block is in state Migrating, i.e., the processor has not modi-) 125.89 151.08 P
+125.89 145.86 471.71 692.94 C
+130.37 327.75 467.23 442.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+195.68 420.77 212.69 437.77 8.5 RR
+0.5 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+263.71 364.08 280.71 381.08 8.5 RR
+N
+137.67 364.98 154.67 381.99 8.5 RR
+N
+269.38 364.08 286.38 381.08 8.5 RR
+7 X
+V
+0 X
+N
+275.05 364.08 292.06 381.08 8.5 RR
+7 X
+V
+0 X
+N
+1 10 Q
+(H) 201.35 425.97 T
+(L) 142.6 370.04 T
+277.01 392.48 280.71 381.09 271.53 388.79 274.27 390.64 4 Y
+V
+212.69 426.44 M
+ 246.87 422.1 261 409.44 274.28 390.63 D
+N
+215.57 413.12 210.66 424.05 220.62 417.38 218.09 415.25 4 Y
+V
+265.33 378.08 M
+ 249.91 389.18 231.7 400.89 218.1 415.24 D
+N
+(MigrInv) 253.79 414.66 T
+(MOk/) 219.7 379.99 T
+(W) 169.51 379.99 T
+(rAck/) 178.55 379.99 T
+182.89 423.82 194.35 427.34 186.5 418.28 184.7 421.05 4 Y
+V
+149 381.99 M
+ 155.41 398.62 169.87 410.95 184.7 421.05 D
+N
+(MigrW) 135.22 414.06 T
+(r) 164.26 414.06 T
+167.01 380.6 155.31 377.91 163.8 386.38 165.4 383.49 4 Y
+V
+200.45 421.33 M
+ 191.98 407.68 180.4 393.26 165.41 383.49 D
+N
+(MW) 166.46 369.7 T
+(rAck) 184.39 369.7 T
+(MNotOk) 213.59 369.7 T
+(1) 148.9 403.32 T
+(4) 182.92 357.97 T
+(3) 229.14 357.97 T
+(2) 267.95 403.32 T
+132.97 332.39 464.63 350.38 R
+7 X
+V
+1 9 Q
+0 X
+(Fig. 1. Coherence actions for detection of migratory blocks \050left\051 and) 174.57 344.38 T
+(coherence actions for read misses to migratory blocks \050right\051.) 188.2 335.38 T
+372.54 420.24 389.62 437.25 8.5 RR
+N
+440.88 363.55 457.97 380.56 8.5 RR
+N
+314.25 364.46 331.34 381.47 8.5 RR
+N
+1 10 Q
+(H) 378.23 425.45 T
+(L) 319.21 369.52 T
+447.56 391.15 450.58 379.53 441.86 387.78 444.71 389.46 4 Y
+V
+389.62 425.91 M
+ 420.17 421.49 432.85 408.6 444.72 389.46 D
+N
+392.51 412.61 387.58 423.53 397.54 416.88 395.02 414.75 4 Y
+V
+442.51 377.56 M
+ 427.01 388.66 408.7 400.38 395.04 414.75 D
+N
+(MRdI) 435.71 414.14 T
+(NoMig/) 392.83 379.46 T
+(Data/) 351.4 379.46 T
+359.72 423.33 371.2 426.82 363.32 417.77 361.52 420.55 4 Y
+V
+325.64 381.47 M
+ 332.09 398.1 346.62 410.44 361.53 420.54 D
+N
+(GRd) 318.61 413.54 T
+343.68 380.05 331.98 377.38 340.49 385.84 342.08 382.95 4 Y
+V
+377.33 420.81 M
+ 368.81 407.15 357.18 392.72 342.1 382.95 D
+N
+(Migratory) 341.95 369.18 T
+(UMemI) 392.83 369.18 T
+(1) 325.55 402.8 T
+(4) 359.73 357.45 T
+(3) 406.16 357.45 T
+(2) 445.16 402.8 T
+(R) 448.38 369.2 T
+125.89 145.86 471.71 692.94 C
+1.16 -1.55 596.44 840.34 C
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+0.32 (\336ed it, when MRdI arrives, the block is no longer migratory) 125.89 686.28 P
+0.32 (. Remote sends NoMig to) 367.91 686.28 P
+0.8 (home and keeps a shared copy of the block. Home reclassi\336es the block as ordinary) 125.89 674.28 P
+(and Data is sent to local. Finally) 125.89 662.28 T
+(, the block is loaded into the cache as shared.) 254.4 662.28 T
+-0 (In summary) 143.89 650.28 P
+-0 (, the extra hardware needed to detect migratory blocks beyond what is) 191.28 650.28 P
+0 (already there to support the competitive-update protocol is one pointer associated with) 125.89 638.28 P
+0.33 (each memory block and one extra bit associated with each cache block. The competi-) 125.89 626.28 P
+(tive-update protocol is extended with two memory states and one local cache state.) 125.89 614.28 T
+0 F
+(3.3  An Enhanced Adaptive Pr) 125.89 590.28 T
+(otocol) 255.72 590.28 T
+1 F
+0.54 (In applications with false sharing between two processors, a problem can arise in the) 125.89 573.28 P
+0.15 (adaptive protocol described in Section 3.2. Consider the following reference sequence) 125.89 561.28 P
+(to a block, where a block is alternatively accessed by processor) 125.89 549.28 T
+2 F
+(i) 381.38 549.28 T
+1 F
+( and) 384.16 549.28 T
+2 F
+(j) 403.6 549.28 T
+1 F
+(:) 406.38 549.28 T
+(... \050R) 207.32 532.28 T
+2 9.6 Q
+(i) 227.32 529.28 T
+1 10 Q
+(\051 \050W) 229.99 532.28 T
+2 9.6 Q
+(i) 248.59 529.28 T
+1 10 Q
+(\051 \050R) 251.26 532.28 T
+2 9.6 Q
+(j) 267.09 529.28 T
+1 10 Q
+(\051 \050R) 269.76 532.28 T
+2 9.6 Q
+(i) 285.59 529.28 T
+1 10 Q
+(\051 \050W) 288.26 532.28 T
+2 9.6 Q
+(j) 306.86 529.28 T
+1 10 Q
+(\051 \050R) 309.52 532.28 T
+2 9.6 Q
+(i) 325.35 529.28 T
+1 10 Q
+(\051 \050R) 328.02 532.28 T
+2 9.6 Q
+(j) 343.85 529.28 T
+1 10 Q
+(\051 \050W) 346.52 532.28 T
+2 9.6 Q
+(i) 365.12 529.28 T
+1 10 Q
+(\051...) 367.79 532.28 T
+(\0502\051) 460.05 532.28 T
+0.53 (The above sequence is detected as migratory at the time processor) 125.89 515.28 P
+2 F
+0.53 ( j) 395.55 515.28 P
+1 F
+0.53 (issues W) 404.39 515.28 P
+2 9.6 Q
+0.51 (j) 440.75 512.28 P
+1 10 Q
+0.53 (. How-) 443.41 515.28 P
+0.31 (ever) 125.89 503.28 P
+0.31 (, the subsequent read access by processor) 142.7 503.28 P
+2 F
+0.31 (i) 312.61 503.28 P
+1 F
+0.31 (results in a read-exclusive copy of the) 318.21 503.28 P
+1.74 (block which then leads to a cache miss by processor) 125.89 491.28 P
+2 F
+1.74 (j) 354.4 491.28 P
+1 F
+1.74 ( \050R) 357.18 491.28 P
+2 8 Q
+1.39 (j) 371.42 488.78 P
+1 10 Q
+1.74 (\051 that would have been) 373.65 491.28 P
+1.24 (avoided under a write-invalidate protocol. Thus an increased number of misses can) 125.89 479.28 P
+0.54 (occur) 125.89 467.28 P
+0.54 (. W) 147.55 467.28 P
+0.54 (e have observed this anomaly of the migratory detection mechanism for one) 161.72 467.28 P
+(of the applications we experimentally study \050Ocean\051.) 125.89 455.28 T
+1.6 (Our approach to mitigate the problem is to resort to competitive-update mode) 143.89 443.28 P
+2.34 (when exactly two processors share a block. T) 125.89 431.28 P
+2.34 (o do this a) 323.18 431.28 P
+2 F
+2.34 (last-last-writer) 376.43 431.28 P
+1 F
+2.34 ( pointer) 436.44 431.28 P
+2.34 (,) 469.21 431.28 P
+0.44 (referred to as LL) 125.89 419.28 P
+0.44 (W) 193.94 419.28 P
+0.44 (, is associated with each memory block in addition to the previous) 202.46 419.28 P
+0.07 (L) 125.89 407.28 P
+0.07 (W pointer) 131.26 407.28 P
+0.07 (. When the L) 171.04 407.28 P
+0.07 (W pointer is updated with a new value, the old value of L) 222.72 407.28 P
+0.07 (W is) 453.04 407.28 P
+0.02 (moved to the LL) 125.89 395.28 P
+0.02 (W pointer) 192.15 395.28 P
+0.02 (. In order to classify a block as migratory) 231.89 395.28 P
+0.02 (, the processor that) 396.11 395.28 P
+0.33 (currently modi\336es the block, say) 125.89 383.28 P
+2 F
+0.33 (i) 260.86 383.28 P
+1 F
+0.33 (, must not be any of the last two ones that modi\336ed) 263.64 383.28 P
+(the block, i.e., \050) 125.89 371.28 T
+2 F
+(i) 188.38 371.28 T
+4 F
+(\271) 193.66 371.28 T
+1 F
+(L) 202.65 371.28 T
+(W\051 and \050) 208.02 371.28 T
+2 F
+(i) 243.56 371.28 T
+4 F
+(\271) 248.84 371.28 T
+1 F
+( LL) 254.33 371.28 T
+(W\051.) 268.31 371.28 T
+0 12 Q
+(4  Experimental Methodology) 125.89 343.94 T
+1 10 Q
+1.31 (In this section, we present the simulation framework in which we have studied the) 125.89 326.28 P
+0.65 (ef) 125.89 314.28 P
+0.65 (fectiveness of the adaptive protocol according to Section 3. The simulation models) 133.48 314.28 P
+0.87 (are built on top of the CacheMire T) 125.89 302.28 P
+0.87 (est Bench [1]; a program-driven simulator and a) 273.18 302.28 P
+0 (programming environment. The simulator consists of two parts: a functional simulator) 125.89 290.28 P
+-0.13 (of multiple SP) 125.89 278.28 P
+-0.13 (ARC processors and an architectural simulator) 182.5 278.28 P
+-0.13 (. The functional simulator) 368.22 278.28 P
+3.12 (issues memory references, and the architectural simulator delays the processors) 125.89 266.28 P
+1.09 (according to its timing model. Thus, the same interleaving of memory references is) 125.89 254.28 P
+0.19 (obtained as in the tar) 125.89 242.28 P
+0.19 (get systems we model. W) 209.77 242.28 P
+0.19 (e model 16 processing nodes connected) 312.2 242.28 P
+(by a mesh network.) 125.89 230.28 T
+-0.14 (The or) 143.89 218.28 P
+-0.14 (ganization of a processor node is shown in Fig. 2. The two-level cache hier-) 169.95 218.28 P
+-0.17 (archy we simulate consists of a \336rst-level cache \050FLC\051 and a second-level cache \050SLC\051) 125.89 206.28 P
+0.95 (with associated write-buf) 125.89 194.28 P
+0.95 (fers \05016 entries each\051. The FLC is a 2 Kbyte write-through) 228.69 194.28 P
+0.07 (on-chip cache whereas the SLC is an in\336nite copy-back cache. Both caches are direct-) 125.89 182.28 P
+-0.17 (mapped with a line size of 16 bytes and full inclusion is supported. The SLC is lockup-) 125.89 170.28 P
+0.75 (free [10] whereas the FLC is blocking and has an invalidation pin so a block can be) 125.89 158.28 P
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+0.38 (invalidated from outside the processor) 125.89 686.28 P
+0.38 (. All coherence actions associated with the sys-) 280.18 686.28 P
+0.52 (tem-level cache coherence protocol are handled by the SLC and by the memory con-) 125.89 674.28 P
+0.54 (troller) 125.89 662.28 P
+0.54 (. Acquire and release requests are supported by a queue-based lock mechanism) 149.78 662.28 P
+0.99 (similar to the one implemented in the DASH multiprocessor [5]. The page size is 4) 125.89 650.28 P
+(Kbyte and the pages are allocated to memory modules in a round-robin fashion.) 125.89 638.28 T
+0.38 (As for the timing model, we consider SP) 143.89 484.78 P
+0.38 (ARC processors and their FLCs clocked) 308.42 484.78 P
+-0.04 (at 100 MHz \0501 pclock= 10 ns\051. The SLC is assumed to be implemented by static RAM) 125.89 472.78 P
+0.72 (with an access time of 30 ns. The SLC and its write buf) 125.89 460.78 P
+0.72 (fer are connected to the net-) 356.23 460.78 P
+0.64 (work interface control and the local memory module by a 128-bit wide split transac-) 125.89 448.78 P
+0.53 (tion bus clocked at 33 MHz. Thus, it takes 30 ns to arbitrate for the bus and 30 ns to) 125.89 436.78 P
+0.26 (transfer a request or a block. Furthermore, the memory is assumed to be implemented) 125.89 424.78 P
+(by dynamic RAM with an access time of 90 ns including buf) 125.89 412.78 T
+(fering.) 369.3 412.78 T
+0.46 (W) 143.89 400.78 P
+0.46 (e simulate a system containing 16 nodes interconnected by a 4-by-4 wormhole) 152.53 400.78 P
+-0.16 (routed synchronous mesh with a \337it size of 64 bits. T) 125.89 388.78 P
+-0.16 (o especially look at how the adap-) 336.05 388.78 P
+0.54 (tive protocol manages to reduce network contention, we assume a conservative mesh) 125.89 376.78 P
+0.04 (implementation that is clocked at 33 MHz. W) 125.89 364.78 P
+0.04 (e correctly model contention for all parts) 308.15 364.78 P
+0.13 (in the system. W) 125.89 352.78 P
+0.13 (ith these assumptions it takes 1, 4, and 28 pclocks to satisfy a proces-) 193.1 352.78 P
+0.63 (sor read request from the FLC, the SLC, and from the local memory) 125.89 340.78 P
+0.63 (, respectively) 405.56 340.78 P
+0.63 (. A) 458.86 340.78 P
+2.21 (read miss serviced in home and remote takes 100 and 196 pclocks, respectively) 125.89 328.78 P
+2.21 (,) 469.21 328.78 P
+1.19 (assuming a contention-free system. \050In our simulations, however) 125.89 316.78 P
+1.19 (, requests normally) 392.95 316.78 P
+(take a longer time as a result of contention.\051) 125.89 304.78 T
+0.73 (In order to understand the relative performance of the adaptive protocol, we use) 143.89 292.78 P
+0.19 (\336ve scienti\336c and engineering applications. Four of them are taken from the SPLASH) 125.89 280.78 P
+1.33 (suite \050MP3D, W) 125.89 268.78 P
+1.33 (ater) 193.59 268.78 P
+1.33 (, Cholesky) 208.18 268.78 P
+1.33 (, and PTHOR\051 [8]. The \336fth application \050Ocean\051 has) 251.64 268.78 P
+-0.08 (been provided to us from Steven W) 125.89 256.78 P
+-0.08 (oo of Stanford University) 266.82 256.78 P
+-0.08 (. All programs are written) 368.43 256.78 P
+0.1 (in C using the ANL macros to express parallelism and compiled with) 125.89 244.78 P
+3 F
+0.25 (gcc) 406.56 244.78 P
+1 F
+0.1 ( version 2.1) 424.56 244.78 P
+(\050optimization level) 125.89 232.78 T
+3 F
+(-O2) 204.22 232.78 T
+1 F
+(\051.) 222.22 232.78 T
+2.53 (MP3D was run with 10 000 particles for 10 time steps. Cholesky used the) 143.89 220.78 P
+3 F
+0.52 (bcsstk14) 125.89 208.78 P
+1 F
+0.22 ( matrix. W) 173.89 208.78 P
+0.22 (ater was run with 288 molecules for 4 time steps. PTHOR used) 216.57 208.78 P
+0.23 (the RISC circuit and was run for 1000 time steps. Finally) 125.89 196.78 P
+0.23 (, Ocean used a 128x128 grid) 356.14 196.78 P
+0.5 (with the tolerance factor set to 10) 125.89 184.78 P
+1 8 Q
+0.4 (-7) 262.78 188.78 P
+1 10 Q
+0.5 (. Previous studies [4, 1) 269.44 184.78 P
+0.5 (1] have shown that MP3D,) 362.2 184.78 P
+1.86 (Cholesky) 125.89 172.78 P
+1.86 (, and W) 163.02 172.78 P
+1.86 (ater have a high degree of migratory objects, while PTHOR and) 197.32 172.78 P
+(Ocean have many producer) 125.89 160.78 T
+(-consumer objects.) 235.37 160.78 T
+125.89 145.86 471.71 692.94 C
+125.89 493.44 471.71 634.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+272.67 594.76 284.2 591.45 272.67 588.15 272.67 591.45 4 Y
+0 X
+0 0 0 1 0 0 0 K
+V
+266.54 591.45 272.67 591.45 2 L
+0.5 H
+2 Z
+N
+390.24 516.62 413.22 629.12 R
+0 Z
+N
+7 X
+90 450 11.34 11.34 141.1 591.34 G
+0 X
+90 450 11.34 11.34 141.1 591.34 A
+164.25 593.98 175.79 590.67 164.25 587.36 164.25 590.67 4 Y
+V
+153.11 590.67 164.25 590.67 2 L
+7 X
+V
+2 Z
+0 X
+N
+175.79 579.33 209.8 602.01 R
+0 Z
+N
+0 10 Q
+(FLC) 183.12 587.53 T
+238.2 593.98 249.74 590.67 238.2 587.36 238.2 590.67 4 Y
+V
+209.8 590.67 238.2 590.67 2 L
+2 Z
+N
+238.9 602.78 266.49 602.78 266.49 579.33 238.9 579.33 4 L
+N
+255.15 602.54 255.15 579.87 2 L
+N
+260.22 602.54 260.22 579.87 2 L
+N
+250.62 602.54 250.62 579.87 2 L
+N
+284.19 579.73 318.21 602.06 R
+0 Z
+N
+(SLC) 292.43 588.5 T
+330.3 594.29 341.83 590.98 330.3 587.68 330.3 590.98 4 Y
+V
+319.02 590.98 330.3 590.98 2 L
+2 Z
+N
+331.32 602.74 358.91 602.74 358.91 580.06 331.32 580.06 4 L
+N
+347.57 602.74 347.57 580.06 2 L
+N
+352.64 602.63 352.64 580.33 2 L
+N
+343.04 602.6 343.04 579.93 2 L
+N
+378.92 593.91 390.45 590.6 378.92 587.29 378.92 590.6 4 Y
+V
+359.54 590.6 378.92 590.6 2 L
+N
+(P) 139.2 587.73 T
+1 F
+(First-level) 234.01 567.73 T
+(write buf) 230.91 557.46 T
+(fer) 267.11 557.46 T
+(Second-level) 319.62 568.14 T
+(write buf) 322.07 557.88 T
+(fer) 358.27 557.88 T
+(First-level) 172.04 614.87 T
+(cache) 181.21 604.6 T
+(Second-level) 273.14 615.79 T
+(cache) 287.87 605.53 T
+0 F
+(Local bus) 0 -90 399.59 594.07 TF
+147.15 498.49 450.45 507.13 R
+7 X
+V
+1 9 Q
+0 X
+(Fig. 2. The or) 218.15 501.13 T
+(ganization of a processor node.) 267.23 501.13 T
+0 10 Q
+(FL) 237.19 607.07 T
+(WB) 249.05 607.07 T
+(SL) 329.02 606.72 T
+(WB) 340.33 606.72 T
+J
+126.53 628.63 219.19 628.63 219.19 554.29 126.53 554.29 4 Y
+J
+126.53 624.63 126.53 628.63 130.53 628.63 3 L
+0 Z
+N
+[7.526 5.644] 7.526 I
+130.53 628.63 215.19 628.63 2 L
+N
+J
+215.19 628.63 219.19 628.63 219.19 624.63 3 L
+N
+[8.56 6.42] 8.56 I
+219.19 624.63 219.19 558.29 2 L
+N
+J
+219.19 558.29 219.19 554.29 215.19 554.29 3 L
+N
+[7.526 5.644] 7.526 I
+215.19 554.29 130.53 554.29 2 L
+N
+J
+130.53 554.29 126.53 554.29 126.53 558.29 3 L
+N
+[8.56 6.42] 8.56 I
+126.53 558.29 126.53 624.62 2 L
+N
+J
+224.72 628.31 374.57 628.31 374.57 554.19 224.72 554.19 4 Y
+J
+224.72 624.31 224.72 628.31 228.72 628.31 3 L
+N
+[7.773 5.829] 7.773 I
+228.72 628.31 370.57 628.31 2 L
+N
+J
+370.57 628.31 374.57 628.31 374.57 624.31 3 L
+N
+[8.531 6.398] 8.531 I
+374.57 624.31 374.57 558.19 2 L
+N
+J
+374.57 558.19 374.57 554.19 370.57 554.19 3 L
+N
+[7.773 5.829] 7.773 I
+370.57 554.19 228.72 554.19 2 L
+N
+J
+228.72 554.19 224.72 554.19 224.72 558.19 3 L
+N
+[8.531 6.398] 8.531 I
+224.72 558.19 224.72 624.3 2 L
+N
+J
+(Standard) 151.45 544.69 T
+287.59 516.91 374.74 543.34 R
+2 Z
+N
+374.73 531.2 390.45 531.2 2 L
+N
+(Memory module) 295.75 526.78 T
+424.89 549.93 469.17 597.07 R
+N
+(Network) 427.59 581.2 T
+(interface) 427.59 571.2 T
+(contr) 427.59 561.2 T
+(ol) 450.18 561.2 T
+413.31 571.91 424.73 571.91 2 L
+N
+(micr) 138.59 534.69 T
+(opr) 158.4 534.69 T
+(ocessor) 173.22 534.69 T
+125.89 145.86 471.71 692.94 C
+1.16 -1.55 596.44 840.34 C
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+0 12 Q
+0 X
+(5  Experimental Results) 125.89 684.94 T
+1 10 Q
+-0.2 (In this section we evaluate performance of the enhanced adaptive protocol described in) 125.89 667.28 P
+0.51 (Section 3.3, henceforth referred to as AD+. A previous study [6] showed that a com-) 125.89 655.28 P
+0.26 (petitive-update protocol reduces both the read penalty and the execution time as com-) 125.89 643.28 P
+0.82 (pared to a write-invalidate protocol for a wide range of applications assuming a 100) 125.89 631.28 P
+-0 (MHz mesh. However) 125.89 619.28 P
+-0 (, for the 33 MHz mesh we use in this study) 211.29 619.28 P
+-0 (, a competitive-update) 382.57 619.28 P
+(protocol may suf) 125.89 607.28 T
+(fer from a higher network traf) 193.48 607.28 T
+(\336c.) 312.98 607.28 T
+0.01 (In Fig. 3 the normalized execution times of the write-invalidate \050WI\051, the compet-) 143.89 595.28 P
+0.99 (itive-update \050CU\051, and the enhanced adaptive \050AD+\051 protocols are presented for the) 125.89 583.28 P
+0.15 (\336ve applications under study) 125.89 571.28 P
+0.15 (. Three bars are associated with each application and cor-) 240.97 571.28 P
+0.34 (respond to WI, CU, and AD+, respectively) 125.89 559.28 P
+0.34 (. Each vertical bar is divided into four sec-) 298.73 559.28 P
+1.65 (tions that correspond to \050from the bottom to the top\051: the busy time \050or processor) 125.89 547.28 P
+0.14 (utilization\051, the processor stall time due to read misses, the processor stall time to per-) 125.89 535.28 P
+0.12 (form acquire requests, and the processor stall time due to a full \336rst-level write buf) 125.89 523.28 P
+0.12 (fer) 458.66 523.28 P
+0.12 (.) 469.21 523.28 P
+-0.23 (Note that there is no write stall time since we use Release Consistency) 125.89 511.28 P
+-0.23 (. In our measure-) 404.1 511.28 P
+(ments, we have assumed a competitive threshold of 4.) 125.89 499.28 T
+0.16 (Comparing WI and CU, we observe in Fig. 3 that both MP3D and Cholesky have) 143.89 349.55 P
+0.1 (longer read stall times under CU than under WI, mainly as a result of network conten-) 125.89 337.55 P
+0.57 (tion. In T) 125.89 325.55 P
+0.57 (able 1, the bandwidth requirements for each application is presented, calcu-) 163.83 325.55 P
+2.2 (lated as the network traf) 125.89 313.55 P
+2.2 (\336c divided by the execution time and normalized to the) 231.13 313.55 P
+0.68 (bandwidth requirement of WI for each application. W) 125.89 301.55 P
+0.68 (e observe that WI requires less) 345.32 301.55 P
+0.71 (bandwidth than CU for all applications. The lar) 125.89 289.55 P
+0.71 (ge number of unnecessary updates to) 320.12 289.55 P
+0.46 (migratory objects results in a dramatic dif) 125.89 277.55 P
+0.46 (ference in the bandwidth needed for MP3D) 295.67 277.55 P
+0.37 (and Cholesky) 125.89 265.55 P
+0.37 (. For MP3D we see that CU requires 51% more bandwidth than WI and) 180.32 265.55 P
+(for Cholesky CU requires 86% more bandwidth than WI.) 125.89 253.55 T
+0.76 (In Fig. 3, we also observe that for PTHOR the acquire stall time is signi\336cantly) 143.89 241.55 P
+0.76 (higher under CU than under WI. This ef) 125.89 229.55 P
+0.76 (fect arises because PTHOR exhibits conten-) 291.56 229.55 P
+0.02 (tion for critical sections, i.e., at the time a lock is released there is already another pro-) 125.89 217.55 P
+0.06 (cessor waiting to get the lock. The higher rate of global write actions under CU delays) 125.89 205.55 P
+-0.02 (the issuance of a release, which as a secondary ef) 125.89 193.55 P
+-0.02 (fect delays the processors waiting for) 322.68 193.55 P
+0.08 (the lock. The adaptive protocol we propose can reduce both these problems as we will) 125.89 181.55 P
+(show next.) 125.89 169.55 T
+125.89 145.86 471.71 692.94 C
+125.89 358.22 471.71 495.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 15 10 864 302 339.6 116.8 129 373.96 FMBEGINEPSF
+%%BeginDocument: /usr/dit/nesse/research/papers/adaptive/PARLE-94/camera/all-33.ps
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 15 10 864 302
+%%Pages: 1
+%%DocumentFonts: Helvetica Helvetica-Oblique Helvetica-Bold Helvetica-BoldOblique Times-Roman Times-Italic Times-Bold Times-BoldItalic
+%%EndComments
+50 dict begin
+/symbolFont 10 dict def
+symbolFont begin
+/FontType 3 def
+/FontMatrix [.001 0 0 .001 0 0] def
+/FontBBox [-500 -500 500 500] def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+Encoding 1 /Cross put
+Encoding 2 /Triangle put
+Encoding 3 /Trianglefilled put
+Encoding 4 /Diamond put
+Encoding 5 /Diamondfilled put
+Encoding 6 /Square put
+Encoding 7 /Squarefilled put
+Encoding 8 /Rectan put
+Encoding 9 /Rectanfilled put
+Encoding 10 /Circle put
+Encoding 11 /Circlefilled put
+Encoding 12 /Bullet put
+Encoding 13 /Star put
+Encoding 14 /Plus put
+
+/graphclip {newpath moveto lineto lineto lineto closepath clip } def
+
+/Procs 15 dict def
+Procs begin
+/.notdef {} def
+
+/Cross {
+ newpath -500 -500 moveto 500 500 lineto stroke
+ newpath -500 500 moveto 500 -500 lineto stroke } def
+
+/Triangle {
+ newpath -500 -500 moveto 0 500 lineto 500 -500 lineto closepath stroke } def
+
+/Trianglefilled {
+ newpath -500 -500 moveto 0 500 lineto 500 -500 lineto closepath fill } def
+
+/Diamond {
+  newpath -500 0 moveto 0 500 lineto 500 0 lineto 0 -500 lineto closepath
+ stroke } def
+
+/Diamondfilled {
+  newpath -500 0 moveto 0 500 lineto 500 0 lineto 0 -500 lineto closepath
+  fill } def
+
+/Square {
+ newpath -500 -500 moveto -500 500 lineto 500 500 lineto 500 -500 lineto
+ closepath stroke } def
+
+/Squarefilled {
+ newpath -500 -500 moveto -500 500 lineto 500 500 lineto 500 -500 lineto
+ closepath fill } def
+
+/Rectan {
+ newpath -200 -500 moveto -200 500 lineto 200 500 lineto 200 -500 lineto  
+closepath stroke } def
+
+/Rectanfilled {
+ newpath -200 -500 moveto -200 500 lineto 200 500 lineto 200 -500 lineto  
+closepath fill } def
+
+
+/Circle { newpath 0 0 500 0 360 arc stroke } def
+
+/Circlefilled { newpath 0 0 500 0 360 arc closepath fill } def
+
+
+/Bullet { newpath 0 0 500 0 360 arc closepath fill } def
+
+/Plus {
+ newpath 0 -500 moveto 0 500 lineto stroke
+ newpath -500 0 moveto 500 0 lineto stroke } def
+
+/Star {
+ newpath 0 -500 moveto 0 500 lineto stroke
+ newpath -500 0 moveto 500 0 lineto stroke
+ newpath -500 -500 moveto 500 500 lineto stroke
+ newpath -500 500 moveto 500 -500 lineto stroke } def
+
+end
+
+/BuildChar {
+ 1000 0 -500 -500 500 500 setcachedevice
+ exch begin Encoding exch get Procs exch get end exec } def
+end
+
+/Symbols symbolFont definefont pop
+
+% size SetSym		-> set font to be symbols scaled by 'size'
+/SetSym { /Symbols findfont exch scalefont setfont } def
+
+% size fontname SetTxt		-> set font 'fontname' scaled by 'size'
+/SetTxt { findfont exch scalefont setfont } def
+
+% dashtype thicknes SL
+/SL { setlinewidth 0 setdash } def
+
+/cross {2 copy le {exch pop} {pop} ifelse} def
+
+%9 added to distinguish from other clashing scribe definitions
+% from to L9	-> print line between points 'from' and 'to'
+/L9 { newpath moveto lineto stroke } def
+/S9 { newpath moveto } def
+/M9 { lineto } def
+/D9 { stroke } def
+
+%%%%
+%%%% setscreen is not EPSF compliant. if compliance is required,
+%%%% switch which of the following two definitions of SS9 is commented
+%%%% out. it would probably be better to do this by having a seperate
+%%%% version of the prolog file for the user to select.
+%%%%
+%%%% /SS9 { pop pop pop } def
+/SS9 { setscreen } def
+
+/G9 { setgray } def
+/F9 {newpath moveto lineto lineto lineto closepath fill} def
+/E9 {closepath fill} def
+% E9 is fills for incremental curves, while F9 for curve segments
+
+/Landscape {612 0 translate 90 rotate} def
+
+% save current point in global variable psx psy
+/SAVPOS { /psx currentpoint pop def /psy currentpoint exch pop def } def
+
+% string angle xpos ypos TXL	-> print 'string' at pos xpos, ypos
+/TXL { gsave translate rotate 0 0 moveto show SAVPOS grestore } def
+
+% string angle xpos ypos TXR	-> print 'string' at pos xpos, ypos
+/TXR { gsave translate rotate dup stringwidth pop neg 0 moveto show SAVPOS 
+       grestore } def
+
+% string angle xpos ypos TXC	-> print 'string' at pos xpos, ypos
+/TXC { gsave translate rotate dup stringwidth pop 2 div neg 0 moveto show
+       SAVPOS grestore } def
+
+% string angle TXREL	-> print 'string' at xpos ypos translate psx psy rel
+/TXREL { gsave translate rotate psx psy moveto show SAVPOS grestore } def
+
+% char xpos ypos SY	-> print symbol 'char' at position xpos, ypos
+/SY { moveto show } def
+
+/len {dup mul exch dup mul add sqrt}def
+
+
+%%%%%%%%%%%%%%%%%%%%%%%  CURVE SMOOTHING  %%%%%%%%%%%%%%%%%%%%%%
+
+% Curve Smoothing Routines
+%  Ernest Wood  -  Wed Apr 16 09:05:05 1986
+%
+%  These routines will ALWAYS create a smooth curve which
+%  intercepts EVERY point used to generate them.
+%
+%  The definition qA determines the amount of overshoot smoothing
+%  produces around each point.  The distance is the distance to the
+%  next point times aA.  The factor qB scales the amount of overshoot
+%  by the acuteness of the angle around the point.
+%
+%  These values make a square of points into a circle.
+/qA .3 def		% used in qx
+/qB 1 def		% used in afactor
+
+/8a 8 array def
+%
+%  Angle of vector from p0 to p1	p0 p1 polar ang
+/polar{qs neg exch neg atan}def 
+
+%subtract and add points	p0 p1 qs p0-p1
+%				p0 p1 qa p0+p1
+/qs{exch 3 1 roll sub 3 1 roll sub exch}def
+/qa{exch 3 1 roll add 3 1 roll add exch}def
+
+%  Extract point from 8 point array
+%
+/Pt{2 mul dup 8a exch get exch 1 add 8a exch get}def
+
+%  a0 a1 mirrorang ma
+%	If a0 is the angle from p1 to p0 and a1 is the angle from
+%	p1 to p2 then ma is the mirror angle between p0-p1 and p1-p2.
+%  a0 a1 afactor f
+%	If a0 is the angle from p1 to p0 and a1 is the angle from
+%	p1 to p2 then f is the ratio of the inside angle between a0 and a1
+%	and 180 times qB.  This ratio is saturated at 1 and if qB is 0 then
+%	the value returned is always 1.  Thus the more acute the angle 
+%	the smaller the value of f.
+%
+/mirrorang{2 copy add 2 div 3 1 roll sub 0 lt {90} {-90}ifelse add}def
+/afactor{
+    qB 0 eq
+	{ 1 }
+	{sub abs dup 180 gt {360 exch sub} if 180 div qB mul
+	 dup 1 gt {pop 1} if}
+    ifelse
+}def
+
+%  a d xya x y
+%	Given angle a and distance d
+%	produce x and y offsets.
+%
+/xya{exch 2 copy cos mul 3 1 roll sin mul}def
+
+%  p0 p1 p2 p3  qx  pp1 pp2 pp3
+%	Given 4 points on a curve produce the pp# values needed by
+%	curveto to draw a smooth curve between p1 and p2.  The slope
+%	of the curve at p1 and p2 will be perpendicular to the bisector
+%	of a angle between p0/p1/p2 or p1/p2/p3.
+%
+/qx{
+    8a astore pop
+    1 Pt 2 Pt qs len qA mul /dist exch def
+    1 Pt 0 Pt polar
+    1 Pt 2 Pt polar
+    2 copy mirrorang
+    3 1 roll afactor dist mul
+    xya 1 Pt qa
+    2 Pt 3 Pt polar
+    2 Pt 1 Pt polar
+    2 copy mirrorang
+    3 1 roll afactor dist mul
+    xya 2 Pt qa
+    2 Pt
+}def
+
+/qp{8 copy 16 -2 roll pop pop}def
+/ns1{4 copy 4 -2 roll 2 copy qa 4 2 roll qs 6 2 roll /ns{ns2}def }def
+/ns2{qp qx curveto}def
+
+%  User definitions for curve smoothing routines.
+%	First (ms), intermediate (ns), and last points with (fs) and
+%	without (nsfs) automatic stroke execution.
+%
+/ms{2 copy newpath moveto /ns{ns1}def}def
+/ns{ns1}def
+/fs{stroke}def
+/nsfs{ns 4 copy 2 copy qa 4 2 roll qs qx curveto}def
+/nsend{4 copy 2 copy qa 4 2 roll qs qx curveto}def
+%%EndProlog
+%%Page ? 1
+72.000000 72.000000 864.000000 72.000000 864.000000 288.000000 72.000000 288.000000 newpath moveto lineto lineto lineto closepath clip
+72.000000 72.000000 864.000000 72.000000 864.000000 288.000000 72.000000 288.000000 newpath moveto lineto lineto lineto closepath clip
+746.111 72 S9
+[] 21.600000 SL
+746.111 171.692 M9
+gsave 0.800000 G9
+D9
+grestore
+746.111 72 S9
+[] 21.600000 SL
+746.111 146.769 M9
+gsave 0.200000 G9
+D9
+grestore
+746.111 72 S9
+[] 21.600000 SL
+746.111 121.846 M9
+gsave 0.800000 G9
+D9
+grestore
+746.111 72 S9
+[] 21.600000 SL
+746.111 96.9231 M9
+D9
+263.838 72 S9
+[] 21.600000 SL
+263.838 253.108 M9
+gsave 0.800000 G9
+D9
+grestore
+521.05 72 S9
+521.05 251.446 M9
+gsave 0.800000 G9
+D9
+grestore
+681.808 72 S9
+681.808 204.923 M9
+gsave 0.800000 G9
+D9
+grestore
+103.08 72 S9
+[] 21.600000 SL
+103.08 238.154 M9
+gsave 0.200000 G9
+D9
+grestore
+135.231 72 S9
+135.231 276.369 M9
+gsave 0.200000 G9
+D9
+grestore
+167.383 72 S9
+167.383 221.538 M9
+gsave 0.200000 G9
+D9
+grestore
+231.686 72 S9
+231.686 238.154 M9
+gsave 0.200000 G9
+D9
+grestore
+263.838 72 S9
+263.838 251.446 M9
+gsave 0.200000 G9
+D9
+grestore
+295.989 72 S9
+295.989 236.492 M9
+gsave 0.200000 G9
+D9
+grestore
+360.292 72 S9
+360.292 238.154 M9
+gsave 0.200000 G9
+D9
+grestore
+392.444 72 S9
+392.444 228.185 M9
+gsave 0.200000 G9
+D9
+grestore
+424.595 72 S9
+424.595 236.492 M9
+gsave 0.200000 G9
+D9
+grestore
+488.899 72 S9
+488.899 238.154 M9
+gsave 0.200000 G9
+D9
+grestore
+521.05 72 S9
+521.05 249.785 M9
+gsave 0.200000 G9
+D9
+grestore
+553.202 72 S9
+553.202 246.462 M9
+gsave 0.200000 G9
+D9
+grestore
+617.505 72 S9
+617.505 238.154 M9
+gsave 0.200000 G9
+D9
+grestore
+649.656 72 S9
+649.656 209.908 M9
+gsave 0.200000 G9
+D9
+grestore
+681.808 72 S9
+681.808 203.262 M9
+gsave 0.200000 G9
+D9
+grestore
+103.08 72 S9
+[] 21.600000 SL
+103.08 216.554 M9
+gsave 0.800000 G9
+D9
+grestore
+135.231 72 S9
+135.231 246.462 M9
+gsave 0.800000 G9
+D9
+grestore
+167.383 72 S9
+167.383 203.262 M9
+gsave 0.800000 G9
+D9
+grestore
+231.686 72 S9
+231.686 228.185 M9
+gsave 0.800000 G9
+D9
+grestore
+263.838 72 S9
+263.838 238.154 M9
+gsave 0.800000 G9
+D9
+grestore
+295.989 72 S9
+295.989 226.523 M9
+gsave 0.800000 G9
+D9
+grestore
+360.292 72 S9
+360.292 219.877 M9
+gsave 0.800000 G9
+D9
+grestore
+392.444 72 S9
+392.444 209.908 M9
+gsave 0.800000 G9
+D9
+grestore
+424.595 72 S9
+424.595 218.215 M9
+gsave 0.800000 G9
+D9
+grestore
+488.899 72 S9
+488.899 150.092 M9
+gsave 0.800000 G9
+D9
+grestore
+521.05 72 S9
+521.05 135.138 M9
+gsave 0.800000 G9
+D9
+grestore
+553.202 72 S9
+553.202 140.123 M9
+gsave 0.800000 G9
+D9
+grestore
+617.505 72 S9
+617.505 156.738 M9
+gsave 0.800000 G9
+D9
+grestore
+649.656 72 S9
+649.656 138.462 M9
+gsave 0.800000 G9
+D9
+grestore
+681.808 72 S9
+681.808 140.123 M9
+gsave 0.800000 G9
+D9
+grestore
+103.08 72 S9
+[] 21.600000 SL
+103.08 91.9385 M9
+D9
+135.231 72 S9
+135.231 91.9385 M9
+D9
+167.383 72 S9
+167.383 91.9385 M9
+D9
+231.686 72 S9
+231.686 150.258 M9
+D9
+263.838 72 S9
+263.838 153.249 M9
+D9
+295.989 72 S9
+295.989 152.585 M9
+D9
+360.292 72 S9
+360.292 193.292 M9
+D9
+392.444 72 S9
+392.444 193.292 M9
+D9
+424.595 72 S9
+424.595 193.292 M9
+D9
+488.899 72 S9
+488.899 90.2769 M9
+D9
+521.05 72 S9
+521.05 93.6 M9
+D9
+553.202 72 S9
+553.202 93.6 M9
+D9
+617.505 72 S9
+617.505 120.185 M9
+D9
+649.656 72 S9
+649.656 120.185 M9
+D9
+681.808 72 S9
+681.808 120.185 M9
+D9
+initclip 
+12 /Helvetica SetTxt
+(|) 0 72 72 TXC
+(|) -90 72 72 TXC
+14 /Helvetica-Bold SetTxt
+(0) 0 65 67.8 TXR
+12 /Helvetica SetTxt
+(|) -90 72 88.6154 TXC
+14 /Helvetica-Bold SetTxt
+(10) 0 65 84.4154 TXR
+12 /Helvetica SetTxt
+(|) -90 72 105.231 TXC
+14 /Helvetica-Bold SetTxt
+(20) 0 65 101.031 TXR
+12 /Helvetica SetTxt
+(|) -90 72 121.846 TXC
+14 /Helvetica-Bold SetTxt
+(30) 0 65 117.646 TXR
+12 /Helvetica SetTxt
+(|) -90 72 138.462 TXC
+14 /Helvetica-Bold SetTxt
+(40) 0 65 134.262 TXR
+12 /Helvetica SetTxt
+(|) -90 72 155.077 TXC
+14 /Helvetica-Bold SetTxt
+(50) 0 65 150.877 TXR
+12 /Helvetica SetTxt
+(|) -90 72 171.692 TXC
+14 /Helvetica-Bold SetTxt
+(60) 0 65 167.492 TXR
+12 /Helvetica SetTxt
+(|) -90 72 188.308 TXC
+14 /Helvetica-Bold SetTxt
+(70) 0 65 184.108 TXR
+12 /Helvetica SetTxt
+(|) -90 72 204.923 TXC
+14 /Helvetica-Bold SetTxt
+(80) 0 65 200.723 TXR
+12 /Helvetica SetTxt
+(|) -90 72 221.538 TXC
+14 /Helvetica-Bold SetTxt
+(90) 0 65 217.338 TXR
+12 /Helvetica SetTxt
+(|) -90 72 238.154 TXC
+14 /Helvetica-Bold SetTxt
+(100) 0 65 233.954 TXR
+12 /Helvetica SetTxt
+(|) -90 72 254.769 TXC
+14 /Helvetica-Bold SetTxt
+(110) 0 65 250.569 TXR
+12 /Helvetica SetTxt
+(|) -90 72 271.385 TXC
+14 /Helvetica-Bold SetTxt
+(120) 0 65 267.185 TXR
+12 /Helvetica SetTxt
+(|) -90 72 288 TXC
+14 /Helvetica-Bold SetTxt
+(130) 0 65 283.8 TXR
+() 0 468 10.4 TXC
+[] 3.600000 SL
+2 setlinecap
+72 72 864 72 
+L9
+0 setlinecap
+72 72 72 288 
+L9
+() 0 864 37 TXR
+( Normalized Execution Time) 90 29.3 288 TXR
+(100) 0 103.08 246.462 TXC
+(123) 0 135.231 284.677 TXC
+(90) 0 167.383 229.846 TXC
+(100) 0 231.686 246.462 TXC
+(109) 0 263.838 261.415 TXC
+(99) 0 295.989 244.8 TXC
+(100) 0 360.292 246.462 TXC
+(94) 0 392.444 236.492 TXC
+(99) 0 424.595 244.8 TXC
+(100) 0 488.899 246.462 TXC
+(108) 0 521.05 259.754 TXC
+(105) 0 553.202 254.769 TXC
+(100) 0 617.505 246.462 TXC
+(83) 0 649.656 218.215 TXC
+(80) 0 681.808 213.231 TXC
+(Buffer Stall) 0 767.545 155.077 TXL
+(Acquire Stall) 0 767.545 130.154 TXL
+(Read Stall) 0 767.545 105.231 TXL
+(Busy Time) 0 767.545 80.3077 TXL
+(MP3D) 0 135.231 38.7692 TXC
+(Cholesky) 0 263.838 38.7692 TXC
+(Water) 0 392.444 38.7692 TXC
+(PTHOR) 0 521.05 38.7692 TXC
+(Ocean) 0 649.656 38.7692 TXC
+(WI) 0 103.08 55.3846 TXC
+(CU) 0 135.231 55.3846 TXC
+(AD+) 0 167.383 55.3846 TXC
+(WI) 0 231.686 55.3846 TXC
+(CU) 0 263.838 55.3846 TXC
+(AD+) 0 295.989 55.3846 TXC
+(WI) 0 360.292 55.3846 TXC
+(CU) 0 392.444 55.3846 TXC
+(AD+) 0 424.595 55.3846 TXC
+(WI) 0 488.899 55.3846 TXC
+(CU) 0 521.05 55.3846 TXC
+(AD+) 0 553.202 55.3846 TXC
+(WI) 0 617.505 55.3846 TXC
+(CU) 0 649.656 55.3846 TXC
+(AD+) 0 681.808 55.3846 TXC
+() 0 103.08 231.762 TXC
+() 0 135.231 269.977 TXC
+() 0 167.383 215.146 TXC
+() 0 231.686 231.762 TXC
+() 0 263.838 246.715 TXC
+() 0 295.989 230.1 TXC
+() 0 360.292 231.762 TXC
+() 0 392.444 221.792 TXC
+() 0 424.595 230.1 TXC
+() 0 488.899 231.762 TXC
+() 0 521.05 245.054 TXC
+() 0 553.202 240.069 TXC
+() 0 617.505 231.762 TXC
+() 0 649.656 203.515 TXC
+() 0 681.808 198.531 TXC
+() 0 767.545 140.377 TXL
+() 0 767.545 115.454 TXL
+() 0 767.545 90.5308 TXL
+() 0 767.545 65.6077 TXL
+() 0 135.231 24.0692 TXC
+() 0 263.838 24.0692 TXC
+() 0 392.444 24.0692 TXC
+() 0 521.05 24.0692 TXC
+() 0 649.656 24.0692 TXC
+() 0 103.08 40.6846 TXC
+() 0 135.231 40.6846 TXC
+() 0 167.383 40.6846 TXC
+() 0 231.686 40.6846 TXC
+() 0 263.838 40.6846 TXC
+() 0 295.989 40.6846 TXC
+() 0 360.292 40.6846 TXC
+() 0 392.444 40.6846 TXC
+() 0 424.595 40.6846 TXC
+() 0 488.899 40.6846 TXC
+() 0 521.05 40.6846 TXC
+() 0 553.202 40.6846 TXC
+() 0 617.505 40.6846 TXC
+() 0 649.656 40.6846 TXC
+() 0 681.808 40.6846 TXC
+72.000000 72.000000 864.000000 72.000000 864.000000 288.000000 72.000000 288.000000 newpath moveto lineto lineto lineto closepath clip
+72.000000 72.000000 864.000000 72.000000 864.000000 288.000000 72.000000 288.000000 newpath moveto lineto lineto lineto closepath clip
+8 SetSym
+initclip 
+showpage
+%%Trailer
+end
+
+%%EndDocument
+FMENDEPSF
+146.42 363.7 451.18 374.54 R
+7 X
+0 0 0 1 0 0 0 K
+V
+1 9 Q
+0 X
+(Fig. 3. Normalized execution times for WI, CU, and AD+.) 193.53 368.54 T
+125.89 145.86 471.71 692.94 C
+1.16 -1.55 596.44 840.34 C
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+0.1 (W) 143.89 535.28 P
+0.1 (e observe by comparing the execution times for AD+ and WI that overall, AD+) 152.53 535.28 P
+0 (manages to outperform WI for all applications but one \050PTHOR\051. The execution times) 125.89 523.28 P
+1.17 (have decreased under AD+ by between 1% and 20%. For MP3D and Cholesky the) 125.89 511.28 P
+0.85 (main reason is that the read penalty has been reduced by 1) 125.89 499.28 P
+0.85 (1% and 4%, respectively) 367.89 499.28 P
+0.85 (,) 469.21 499.28 P
+-0.04 (thanks to lower contention in the network. Furthermore, the read penalty is reduced by) 125.89 487.28 P
+-0.23 (22% for PTHOR under AD+ as compared to WI. However) 125.89 475.28 P
+-0.23 (, the acquire stall time under) 358.99 475.28 P
+0.59 (AD+ is 21% longer than under WI because of contention for locks. The highest read) 125.89 463.28 P
+0.69 (penalty reduction is achieved for Ocean where AD+ cuts 42% of the read penalty as) 125.89 451.28 P
+0.26 (compared to WI. For Ocean, AD+ also reduces the acquire stall time by 23% as com-) 125.89 439.28 P
+1.57 (pared to WI. In Ocean, the counters in the barriers exhibit migratory sharing. The) 125.89 427.28 P
+0.83 (fewer global write actions under AD+ result in a shorter release issuance time. As a) 125.89 415.28 P
+-0.17 (result, the acquire stall time is reduced if another processor waits for the lock. Remark-) 125.89 403.28 P
+-0.1 (ably) 125.89 391.28 P
+-0.1 (, although W) 142.46 391.28 P
+-0.1 (ater exhibits substantial migratory sharing, there is virtually no dif) 193.39 391.28 P
+-0.1 (fer-) 457.28 391.28 P
+3.19 (ence in performance between WI and AD+. The reason is that the bandwidth) 125.89 379.28 P
+-0 (requirement for W) 125.89 367.28 P
+-0 (ater is very low which means that the read penalty is not af) 199.5 367.28 P
+-0 (fected by) 434.79 367.28 P
+(network contention under WI.) 125.89 355.28 T
+0.65 (In T) 143.89 343.28 P
+0.65 (able 1, we also show the read miss rates decomposed in the cold and coher-) 160.77 343.28 P
+-0.07 (ence miss components for each application. The read miss rates are the number of pro-) 125.89 331.28 P
+2.44 (cessor reads that miss in both the FLC and the SLC divided by the number of) 125.89 319.28 P
+0.07 (processor reads. As expected, for MP3D the miss rates of AD+ are almost the same as) 125.89 307.28 P
+-0.03 (under WI. The miss rates for Cholesky and W) 125.89 295.28 P
+-0.03 (ater are 7% and 1) 308.95 295.28 P
+-0.03 (1% lower) 378.41 295.28 P
+-0.03 (, respectively) 416.58 295.28 P
+-0.03 (,) 469.21 295.28 P
+1.41 (under AD+ than under WI even though most data objects are migratory) 125.89 283.28 P
+1.41 (. However) 426.56 283.28 P
+1.41 (,) 469.21 283.28 P
+1.59 (there are some objects that are not migratory) 125.89 271.28 P
+1.59 (. Those objects resort to competitive-) 314.91 271.28 P
+-0.09 (update, and thus, an overall lower coherence miss rate is encountered. For applications) 125.89 259.28 P
+0.32 (with mar) 125.89 247.28 P
+0.32 (ginal migratory sharing \050PTHOR and Ocean\051 the read miss rates are reduced) 161.86 247.28 P
+0.42 (under AD+ by 38% and 71%, respectively) 125.89 235.28 P
+0.42 (, as compared to WI. Hence, AD+ has pre-) 297.51 235.28 P
+0.3 (served the low read miss rates of CU for applications with little or no migratory shar-) 125.89 223.28 P
+(ing.) 125.89 211.28 T
+0.06 (As for the traf) 143.89 199.28 P
+0.06 (\336c reduction by AD+, we see in T) 200.26 199.28 P
+0.06 (able 1 that the bandwidth require-) 336.16 199.28 P
+0.99 (ments for AD+ is signi\336cantly reduced as compared to WI, and even more as com-) 125.89 187.28 P
+0.98 (pared to CU, for MP3D, Cholesky) 125.89 175.28 P
+0.98 (, and W) 267.62 175.28 P
+0.98 (ater) 300.17 175.28 P
+0.98 (. For these applications the bandwidth) 314.61 175.28 P
+0.79 (requirements are reduced by between 10% and 26% as compared to WI. Comparing) 125.89 163.28 P
+0.81 (AD+ and CU we \336nd that the bandwidth requirements are reduced by between 51%) 125.89 151.28 P
+1 9 Q
+(T) 145.64 686.94 T
+(able 1: Read miss rates and normalized bandwidth requirements of the applications.) 150.51 686.94 T
+(Application) 137.07 650.94 T
+(Read miss rates in percentage) 217.6 665.94 T
+(\050Cold + Coherence\051) 235.3 654.94 T
+(Normalized bandwidth) 370.19 665.94 T
+(requirements \050WI = 100%\051) 362.91 654.94 T
+(WI) 210.44 635.94 T
+(CU) 264.83 635.94 T
+(AD+) 316.95 635.94 T
+(CU) 376.24 635.94 T
+(AD+) 431.59 635.94 T
+(MP3D) 131.91 618.94 T
+(2.4 + 13.0) 197.9 618.94 T
+(2.4 + 1) 252.96 618.94 T
+(1.1) 277.95 618.94 T
+(2.4 + 12.7) 307.69 618.94 T
+(151%) 372 618.94 T
+(74%) 432.38 618.94 T
+(Cholesky) 131.91 603.94 T
+(1.5 + 0.43) 197.9 603.94 T
+(1.4 + 0.37) 252.79 603.94 T
+(1.4 + 0.40) 307.69 603.94 T
+(186%) 372 603.94 T
+(90%) 432.38 603.94 T
+(W) 131.91 588.94 T
+(ater) 139.69 588.94 T
+(0.07 + 1.2) 197.9 588.94 T
+(0.07 + 0.98) 250.54 588.94 T
+(0.07 + 1.0) 307.69 588.94 T
+(197%) 372 588.94 T
+(74%) 432.38 588.94 T
+(PTHOR) 131.91 573.94 T
+(3.3 + 3.6) 200.15 573.94 T
+(3.0 + 0.95) 252.79 573.94 T
+(3.0 + 1.3) 309.94 573.94 T
+(121%) 372 573.94 T
+(1) 430.29 573.94 T
+(16%) 434.46 573.94 T
+(Ocean) 131.91 558.94 T
+(0.04 + 0.73) 195.65 558.94 T
+(0.04 + 0.18) 250.54 558.94 T
+(0.04 + 0.18) 305.44 558.94 T
+(149%) 372 558.94 T
+(156%) 430.13 558.94 T
+127.91 676.94 127.91 554.94 2 L
+V
+2 H
+0 Z
+N
+188.74 678.94 188.74 552.94 2 L
+V
+N
+243.63 648.94 243.63 552.94 2 L
+V
+0.5 H
+N
+298.53 648.94 298.53 552.94 2 L
+V
+N
+353.43 678.94 353.43 552.94 2 L
+V
+2 H
+N
+411.56 648.94 411.56 552.94 2 L
+V
+0.5 H
+N
+469.69 676.94 469.69 554.94 2 L
+V
+2 H
+N
+126.91 677.94 470.69 677.94 2 L
+V
+N
+187.74 647.94 470.69 647.94 2 L
+V
+N
+126.91 628.94 470.69 628.94 2 L
+V
+N
+126.91 613.94 470.69 613.94 2 L
+V
+0.5 H
+N
+126.91 598.94 470.69 598.94 2 L
+V
+N
+126.91 583.94 470.69 583.94 2 L
+V
+N
+126.91 568.94 470.69 568.94 2 L
+V
+N
+126.91 553.94 470.69 553.94 2 L
+V
+2 H
+N
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+1 10 Q
+0 X
+0.86 (and 62%. As expected, the bandwidth requirements are almost the same under AD+) 125.89 686.28 P
+(and CU for applications with little or no migratory sharing \050PTHOR and Ocean\051.) 125.89 674.28 T
+1.15 (W) 143.89 662.28 P
+1.15 (e have also evaluated the bene\336ts of AD+ as compared to the basic adaptive) 152.53 662.28 P
+0.88 (protocol described in Section 3.2, henceforth referred to as AD, which uses a single) 125.89 650.28 P
+-0.01 (L) 125.89 638.28 P
+-0.01 (W pointer per memory block. The only application where AD and AD+ dif) 131.26 638.28 P
+-0.01 (fer in per-) 431.76 638.28 P
+1.42 (formance is Ocean, which has a non-negligible degree of false sharing. Simulation) 125.89 626.28 P
+0.78 (results show that AD has 38% higher read penalty and 136% more read misses than) 125.89 614.28 P
+1.27 (AD+. As a result, the execution time is 15% longer under AD than under AD+. A) 125.89 602.28 P
+(more thorough analysis is presented in [7].) 125.89 590.28 T
+-0.12 (T) 143.89 578.28 P
+-0.12 (o summarize, AD+ appears to be a better default policy than WI and CU because) 149.3 578.28 P
+0.86 (it handles migratory blocks according to the read-exclusive strategy provided by the) 125.89 566.28 P
+0.24 (migratory detection mechanism which helps reducing traf) 125.89 554.28 P
+0.24 (\336c. Like competitive-update) 358.2 554.28 P
+-0.06 (protocols, AD+ handles producer) 125.89 542.28 P
+-0.06 (-consumer sharing \050such as in Ocean and PTHOR\051 in) 258.9 542.28 P
+(competitive-update mode and helps reducing the coherence miss rate for such blocks.) 125.89 530.28 T
+0 12 Q
+(6  Concluding Remarks) 125.89 502.94 T
+1 10 Q
+1.41 (T) 125.89 485.28 P
+1.41 (o improve the performance of competitive-update protocols, we have proposed to) 131.3 485.28 P
+1.79 (extend them with a previously published migratory detection mechanism [1) 125.89 473.28 P
+1.79 (1] that) 444.09 473.28 P
+0.47 (dynamically detects migratory blocks and handles them with read-exclusive requests.) 125.89 461.28 P
+-0.23 (As a result, all global write actions for migratory blocks are eliminated. In addition, the) 125.89 449.28 P
+1.7 (migratory detection mechanism is extended to detect when exactly two processors) 125.89 437.28 P
+-0.03 (modify the same memory block alternately) 125.89 425.28 P
+-0.03 (, e.g., as a result of false sharing. By detect-) 297.01 425.28 P
+1.38 (ing this sharing behavior) 125.89 413.28 P
+1.38 (, the adaptive protocol resorts to competitive-update mode) 228.78 413.28 P
+0.4 (and reduces the coherence miss rate accordingly) 125.89 401.28 P
+0.4 (. W) 320.88 401.28 P
+0.4 (e have also shown that the migra-) 334.92 401.28 P
+1.26 (tory detection mechanism adds only mar) 125.89 389.28 P
+1.26 (ginal complexity to the competitive-update) 294.47 389.28 P
+(protocol.) 125.89 377.28 T
+1.33 (Based on program-driven simulations of a detailed multiprocessor architectural) 143.89 365.28 P
+0.93 (model, we have shown that for competitive-update protocols it is possible to reduce) 125.89 353.28 P
+1.47 (the read miss rates and the bandwidth requirements by as much as 71% and 26%,) 125.89 341.28 P
+1.13 (respectively) 125.89 329.28 P
+1.13 (, as compared to a write-invalidate protocol by detecting migratory data) 173.56 329.28 P
+0.41 (objects. Although the architecture assumed in this study is a CC-NUMA with a mesh) 125.89 317.28 P
+-0.09 (network, the detection mechanism is applicable also to bus-based systems where a low) 125.89 305.28 P
+(traf) 125.89 293.28 T
+(\336c rate is more important than in CC-NUMA architectures with mesh networks.) 139.59 293.28 T
+0.12 (In this study we simulated a system with only 16 processors. As we scale the sys-) 143.89 281.28 P
+-0.2 (tem to a lar) 125.89 269.28 P
+-0.2 (ger number of processors, we expect the latencies to be longer and it will be) 170.38 269.28 P
+0.19 (more important to keep the network bandwidth requirements at a low level. Therefore) 125.89 257.28 P
+1.01 (we believe that the bene\336ts of our adaptive protocol increases with the system size,) 125.89 245.28 P
+0.03 (especially for applications that exhibit migratory sharing. The study of cache invalida-) 125.89 233.28 P
+0.54 (tion patterns by Gupta and W) 125.89 221.28 P
+0.54 (eber [4] shows that migratory sharing is independent of) 245.8 221.28 P
+(system size, at least in the range 8 to 32 processors which they use in their study) 125.89 209.28 T
+(.) 446.59 209.28 T
+0.7 (This study shows that by adding a simple mechanism for detection of migratory) 143.89 197.28 P
+4.3 (sharing the network traf) 125.89 185.28 P
+4.3 (\336c under competitive-update protocols is signi\336cantly) 234.41 185.28 P
+0.08 (reduced, and as a result, such adaptive competitive-update protocols are shown to out-) 125.89 173.28 P
+(perform write-invalidate protocols for networks with low bandwidths.) 125.89 161.28 T
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+597.6 838.8 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+64.8 40.27 532.8 52.22 R
+7 X
+0 0 0 1 0 0 0 K
+V
+125.89 145.86 471.71 692.94 R
+V
+0 12 Q
+0 X
+(Acknowledgment) 125.89 684.94 T
+1 10 Q
+0.45 (W) 125.89 665.28 P
+0.45 (e would like to thank Lars J\232nsson for implementing the basic adaptive protocol in) 134.53 665.28 P
+-0.04 (our simulator as a part of his Master) 125.89 653.28 P
+-0.04 (\325) 270.67 653.28 P
+-0.04 (s thesis. This work was supported by the Swedish) 273.45 653.28 P
+0.66 (National Board for Industrial and T) 125.89 641.28 P
+0.66 (echnical Development \050Nutek\051 under the contract) 270.41 641.28 P
+(number 9001797.) 125.89 629.28 T
+0 12 Q
+(Refer) 125.89 605.94 T
+(ences) 154.32 605.94 T
+1 9 Q
+(1.) 133.31 586.94 T
+-0.05 (M. Brorsson, F) 145.73 586.94 P
+-0.05 (. Dahlgren, H. Nilsson, and P) 199.42 586.94 P
+-0.05 (. Stenstr\232m, \322The CacheMire T) 303.94 586.94 P
+-0.05 (est Bench \321 A) 416.61 586.94 P
+-0.13 (Flexible and Ef) 145.73 575.94 P
+-0.13 (fective Approach for Simulation of Multiprocessors\323, In) 200.79 575.94 P
+2 F
+-0.13 (Pr) 404.82 575.94 P
+-0.13 (oceedings of the) 413.49 575.94 P
+(26th Annual Simulation Symposium) 145.73 564.94 T
+1 F
+(, pp. 41-49, March 1993) 274.48 564.94 T
+(2.) 133.31 550.94 T
+0.9 (A.L. Cox and R.J. Fowler) 145.73 550.94 P
+0.9 (, \322Adaptive Cache Coherency for Detecting Migratory Shared) 241.97 550.94 P
+0.05 (Data\323, In) 145.73 539.94 P
+2 F
+0.05 (Pr) 181.06 539.94 P
+0.05 (oceedings of the 20th International Symposium on Computer Ar) 189.73 539.94 P
+0.05 (chitectur) 420.26 539.94 P
+0.05 (e) 451.92 539.94 P
+1 F
+0.05 (, pp.) 455.92 539.94 P
+(98-108, May 1993) 145.73 528.94 T
+(3.) 133.31 514.94 T
+0.63 (K. Gharachorloo, A. Gupta, and J. Hennessy) 145.73 514.94 P
+0.63 (, \322Performance Evaluation of Memory Con-) 309.61 514.94 P
+0.23 (sistency Models for Shared-Memory Multiprocessors\323, In) 145.73 503.94 P
+2 F
+0.23 (Pr) 357.81 503.94 P
+0.23 (oceedings of ASPLOS IV) 366.48 503.94 P
+1 F
+0.23 (, pp.) 455.74 503.94 P
+(245-257, April 1991) 145.73 492.94 T
+(4.) 133.31 478.94 T
+0.34 (A. Gupta and W) 145.73 478.94 P
+0.34 (-D. W) 205.23 478.94 P
+0.34 (eber) 227.34 478.94 P
+0.34 (, \322Cache Invalidation Patterns in Shared-Memory Multiproces-) 242.47 478.94 P
+(sors\323,) 145.73 467.94 T
+2 F
+(IEEE T) 168.72 467.94 T
+(ransaction on Computers) 194.98 467.94 T
+1 F
+(, 41\0507\051, pp. 794-810, July 1992) 286.48 467.94 T
+(5.) 133.31 453.94 T
+0.17 (D. Lenoski, J. Laudon, K. Gharachorloo, W) 145.73 453.94 P
+0.17 (-D. W) 304.23 453.94 P
+0.17 (eber) 326.17 453.94 P
+0.17 (, A. Gupta, J. Hennessy) 341.3 453.94 P
+0.17 (, M. Horow-) 426.38 453.94 P
+0.69 (itz, and M. Lam, \322The Stanford DASH Multiprocessor\323,) 145.73 442.94 P
+2 10 Q
+0.77 (IEEE Computer) 356.71 442.94 P
+1 9 Q
+0.69 (, 25\0503\051:63-79,) 421.28 442.94 P
+(March 1992) 145.73 431.94 T
+(6.) 133.31 417.94 T
+1.48 (H. Nilsson, P) 145.73 417.94 P
+1.48 (. Stenstr\232m, and M. Dubois, \322) 195.69 417.94 P
+2 F
+1.48 (Implementation and Evaluation of Update-) 310.82 417.94 P
+0.69 (Based Cache Pr) 145.73 406.94 P
+0.69 (otocols Under Relaxed Memory Consistency Models) 205.28 406.94 P
+1 F
+0.69 (\323, T) 397.97 406.94 P
+0.69 (echnical Report,) 412.03 406.94 P
+(Dept. of Computer Engineering, Lund University) 145.73 395.94 T
+(, Sweden, July 1993) 322.88 395.94 T
+(7.) 133.31 381.94 T
+1.13 (H. Nilsson and P) 145.73 381.94 P
+1.13 (. Stenstr\232m, \322) 209.13 381.94 P
+2 F
+1.13 (Evaluation of Adaptive Update-Based Cache Pr) 260.9 381.94 P
+1.13 (otocols) 439.47 381.94 P
+1 F
+1.13 (\323,) 465.47 381.94 P
+(T) 145.73 370.94 T
+(echnical Report, Dept. of Computer Engineering, Lund University) 150.6 370.94 T
+(, Sweden, March 1994) 388.98 370.94 T
+(8.) 133.31 356.94 T
+2.03 (J-P) 145.73 356.94 P
+2.03 (. Singh, W) 156.23 356.94 P
+2.03 (-D. W) 198.3 356.94 P
+2.03 (eber) 222.11 356.94 P
+2.03 (, and A. Gupta. \322SPLASH: Stanford parallel applications for) 237.24 356.94 P
+(shared-memory\323, Computer Architecture News, 20\0501\051:5-44, March 1992) 145.73 345.94 T
+(9.) 133.31 331.94 T
+0.5 (P) 145.73 331.94 P
+0.5 (. Stenstr\232m, \322A Survey of Cache Coherence Schemes for Multiprocessors\323) 149.73 331.94 P
+2 F
+0.5 (, IEEE Com-) 424.46 331.94 P
+(puter) 145.73 320.94 T
+1 F
+(, 23\0506\051:12-24, June 1990) 164.37 320.94 T
+(10.) 128.81 306.94 T
+2.64 (P) 145.73 306.94 P
+2.64 (. Stenstr\232m, F) 149.73 306.94 P
+2.64 (. Dahlgren, and L. Lundber) 204.81 306.94 P
+2.64 (g, \322A Lockup-free Multiprocessor Cache) 313.44 306.94 P
+0.63 (Design\323, In) 145.73 295.94 P
+2 F
+0.63 (Pr) 190.73 295.94 P
+0.63 (oceeding of 1991 International Confer) 199.4 295.94 P
+0.63 (ence on Parallel Pr) 340.58 295.94 P
+0.63 (ocessing) 412.87 295.94 P
+1 F
+0.63 (, V) 443.87 295.94 P
+0.63 (ol. I,) 454.33 295.94 P
+(pp. 246-250, August 1991) 145.73 284.94 T
+(1) 129.14 270.94 T
+(1.) 133.31 270.94 T
+1.36 (P) 145.73 270.94 P
+1.36 (. Stenstr\232m, M. Brorsson, and L. Sandber) 149.73 270.94 P
+1.36 (g, \322An Adaptive Cache Coherence Protocol) 307.46 270.94 P
+-0.15 (Optimized for Migratory Sharing\323, In) 145.73 259.94 P
+2 F
+-0.15 (Pr) 282.96 259.94 P
+-0.15 (oceedings of the 20th International Symposium on) 291.62 259.94 P
+(Computer Ar) 145.73 248.94 T
+(chitectur) 192.65 248.94 T
+(e) 224.31 248.94 T
+1 F
+(, pp. 109-1) 228.3 248.94 T
+(18, May 1993) 266.97 248.94 T
+FMENDPAGE
+%%EndPage: "12" 12
+%%Trailer
+%%BoundingBox: 0 0 597.6 838.8
+%%PageOrder: Ascend
+%%Pages: 12
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Courier
+%%+ Symbol
+%%EOF
